@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   const t = useTranslations("hero");
@@ -53,15 +54,15 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="/book-a-taxi"
+          <Link
+            href="/en/book-a-taxi"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-black font-bold px-8 py-4 rounded-full text-sm uppercase tracking-[0.15em] transition-all duration-300 shadow-lg shadow-gold/30 hover:shadow-gold/50 hover:scale-105"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
             </svg>
             {t("cta")}
-          </a>
+          </Link>
           <a
             href="tel:+4401252265363"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-gold text-white hover:text-gold px-8 py-4 rounded-full text-sm uppercase tracking-[0.15em] transition-all duration-300 backdrop-blur-sm hover:bg-gold/5"
@@ -74,14 +75,14 @@ export default function Hero() {
         </div>
 
         {/* Trust indicators */}
-        <div className="flex items-center justify-center gap-6 mt-12 text-xs text-gray-400 uppercase tracking-widest">
+        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mt-12 text-xs text-gray-400 uppercase tracking-widest">
           <span className="flex items-center gap-1.5">
             <span className="text-gold">★★★★★</span>
             Google 4.9
           </span>
-          <span className="text-dark-border">|</span>
+          <span className="hidden sm:inline text-dark-border">|</span>
           <span>24/7 Available</span>
-          <span className="text-dark-border">|</span>
+          <span className="hidden sm:inline text-dark-border">|</span>
           <span>Meet &amp; Greet</span>
         </div>
       </div>
