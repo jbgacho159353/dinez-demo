@@ -1,24 +1,11 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "../globals.css";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-
-export const metadata: Metadata = {
-  title: "Corporate Portal | Dinez Executive Taxis",
-  robots: "noindex, nofollow",
-};
-
 export default function CorporateLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="bg-[#0A0A0A] text-white min-h-screen font-sans antialiased">
-        {children}
-      </body>
+    <html lang="en">
+      <body className="bg-[#0A0A0A]">{children}</body>
     </html>
-  );
+  )
 }
