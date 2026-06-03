@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
@@ -51,7 +52,7 @@ export default function AirportTransfersPage() {
                   <svg className="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
                   From Aldershot: {a.distance}
                 </div>
-                <a href="/book-a-taxi" className="mt-4 flex items-center gap-2 text-gold text-sm font-medium group-hover:gap-3 transition-all">Book this transfer <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg></a>
+                <Link href="/en/book-a-taxi" className="mt-4 flex items-center gap-2 text-gold text-sm font-medium group-hover:gap-3 transition-all">Book this transfer <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg></Link>
               </div>
             ))}
           </div>

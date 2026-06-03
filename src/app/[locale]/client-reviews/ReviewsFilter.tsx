@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { allReviews, PLATFORM_COLORS } from "@/data/reviews";
 
 const FILTERS = ["All", "Google", "TripAdvisor", "Yell", "FreeIndex"] as const;
@@ -133,12 +134,12 @@ export default function ReviewsFilter() {
             ))}
           </div>
 
-          <a
-            href="/book-a-taxi"
+          <Link
+            href="/en/book-a-taxi"
             className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-dark font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105"
           >
             Book Your Next Journey →
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ import PageHero from "@/components/PageHero";
 import BookCTA from "@/components/BookCTA";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Mercedes V-Class | Dinez Executive Taxis",
@@ -71,12 +72,12 @@ export default function VehiclePage() {
                 Whether you are heading to Heathrow, attending a board meeting, or celebrating a special occasion, the Mercedes V-Class ensures you arrive refreshed, on time, and in complete luxury.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <a href="/book-a-taxi?vehicle=v-class" className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-black font-bold px-7 py-3.5 rounded-full text-sm uppercase tracking-wider transition-all shadow-lg shadow-gold/20 hover:scale-105">
+                <Link href="/en/book-a-taxi" className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-black font-bold px-7 py-3.5 rounded-full text-sm uppercase tracking-wider transition-all shadow-lg shadow-gold/20 hover:scale-105">
                   Book This Vehicle
-                </a>
-                <a href="/get-a-quote" className="inline-flex items-center justify-center gap-2 border border-gold/40 hover:border-gold text-gold px-7 py-3.5 rounded-full text-sm uppercase tracking-wider transition-all">
+                </Link>
+                <Link href="/en/get-a-quote" className="inline-flex items-center justify-center gap-2 border border-gold/40 hover:border-gold text-gold px-7 py-3.5 rounded-full text-sm uppercase tracking-wider transition-all">
                   Get a Quote
-                </a>
+                </Link>
               </div>
             </div>
             <div className="relative h-80 rounded-2xl overflow-hidden border border-dark-border">

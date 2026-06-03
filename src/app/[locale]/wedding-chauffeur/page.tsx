@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar"; import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero"; import BookCTA from "@/components/BookCTA";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -22,7 +23,7 @@ export default function WeddingPage() {
           <h2 className="text-4xl font-playfair font-bold text-white mb-5">White-Glove Wedding Service</h2>
           <p className="text-gray-400 leading-relaxed mb-6">Your wedding day deserves nothing short of perfection. Our wedding chauffeur service is designed around your specific schedule, with dedicated drivers who understand the importance of every minute.</p>
           <p className="text-gray-400 leading-relaxed mb-8">From the bride's preparation address to the ceremony, reception and beyond — we coordinate seamlessly with your wedding planner and photographer to ensure flawless, beautiful arrivals.</p>
-          <a href="/get-a-quote" className="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-black font-bold px-8 py-3.5 rounded-full text-sm uppercase tracking-wider transition-all shadow-lg shadow-gold/20">Request Wedding Quote</a>
+          <Link href="/en/get-a-quote" className="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-black font-bold px-8 py-3.5 rounded-full text-sm uppercase tracking-wider transition-all shadow-lg shadow-gold/20">Request Wedding Quote</Link>
         </div>
         <div className="bg-dark-card border border-gold/20 rounded-2xl p-7">
           <h3 className="text-xl font-playfair font-bold text-white mb-5">Everything Included</h3>

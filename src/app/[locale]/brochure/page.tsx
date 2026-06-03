@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar"; import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero"; import WhatsAppButton from "@/components/WhatsAppButton";
 export const metadata: Metadata = { title: "Download Brochure | Dinez Executive Taxis", description: "Download the Dinez Executive Taxis services brochure. Full fleet details, services overview and pricing guide." };
@@ -38,7 +39,7 @@ export default function BrochurePage() {
             <h3 className="text-xl font-playfair font-bold text-white mb-3">Download PDF</h3>
             <p className="text-gray-400 text-sm mb-6">Full brochure including pricing guide, fleet photos and service details.</p>
             <a href="#" className="block w-full bg-gold hover:bg-gold-dark text-black font-bold py-3.5 rounded-full text-sm uppercase tracking-wider transition-all mb-3">Download Brochure</a>
-            <a href="/get-a-quote" className="block w-full border border-gold/40 hover:border-gold text-gold py-3 rounded-full text-sm uppercase tracking-wider transition-all">Request a Quote</a>
+            <Link href="/en/get-a-quote" className="block w-full border border-gold/40 hover:border-gold text-gold py-3 rounded-full text-sm uppercase tracking-wider transition-all">Request a Quote</Link>
             <div className="mt-6 pt-5 border-t border-dark-border text-xs text-gray-500 space-y-1">
               <p>📞 +44 01252 265363</p><p>✉️ bookings@dinez.co.uk</p><p>📍 Aldershot, GU11 3EF</p>
             </div>

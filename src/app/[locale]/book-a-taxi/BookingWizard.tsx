@@ -1241,7 +1241,7 @@ export default function BookingWizard() {
               SECURE A 5-STAR SERVICE
             </button>
             <Link
-              href="/get-a-quote"
+              href="/en/get-a-quote"
               className="w-full sm:w-auto inline-flex items-center justify-center border-2 border-[#C9A84C]/60 hover:border-[#C9A84C] text-[#C9A84C] px-8 py-4 rounded-full text-sm uppercase tracking-[0.15em] transition-all hover:bg-[#C9A84C]/5"
             >
               REQUEST PRIORITY CONFIRMATION

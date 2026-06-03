@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar"; import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero"; import BookCTA from "@/components/BookCTA";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -40,7 +41,7 @@ export default function CruisePage() {
           <div className="text-5xl mb-4">🚢</div>
           <h3 className="text-2xl font-playfair font-bold text-white mb-3">Group Travel?</h3>
           <p className="text-gray-400 text-sm mb-6">Our Mercedes V-Class seats 7 and our Sprinter handles up to 16. Perfect for cruise groups.</p>
-          <a href="/book-a-taxi" className="inline-block bg-gold hover:bg-gold-dark text-black font-bold px-7 py-3 rounded-full text-sm uppercase tracking-wider transition-all">Book Group Transfer</a>
+          <Link href="/en/book-a-taxi" className="inline-block bg-gold hover:bg-gold-dark text-black font-bold px-7 py-3 rounded-full text-sm uppercase tracking-wider transition-all">Book Group Transfer</Link>
         </div>
       </div>
     </div></section>

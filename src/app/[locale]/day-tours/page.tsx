@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar"; import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero"; import BookCTA from "@/components/BookCTA";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -29,14 +30,14 @@ export default function DayToursPage() {
               <div className="space-y-1 mb-5">
                 {t.highlights.map(h=><div key={h} className="flex items-center gap-2 text-xs text-gray-500"><span className="text-gold">•</span>{h}</div>)}
               </div>
-              <a href="/book-a-taxi" className="flex items-center justify-center gap-2 w-full border border-gold/40 hover:border-gold hover:bg-gold/10 text-gold text-xs font-semibold py-2.5 rounded-full uppercase tracking-widest transition-all">Book This Tour</a>
+              <Link href="/en/book-a-taxi" className="flex items-center justify-center gap-2 w-full border border-gold/40 hover:border-gold hover:bg-gold/10 text-gold text-xs font-semibold py-2.5 rounded-full uppercase tracking-widest transition-all">Book This Tour</Link>
             </div>
           </div>
         ))}
         {/* Custom tour card */}
         <div className="bg-gradient-to-br from-gold/10 to-gold/5 border border-gold/30 rounded-2xl p-6 flex flex-col justify-between">
           <div><div className="text-4xl mb-4">✨</div><h3 className="text-white font-bold text-lg mb-2">Custom Itinerary</h3><p className="text-gray-400 text-sm leading-relaxed mb-4">Have a specific destination in mind? We will build a bespoke day tour around your interests and pace.</p></div>
-          <a href="/get-a-quote" className="flex items-center justify-center gap-2 w-full bg-gold hover:bg-gold-dark text-black font-bold text-xs py-3 rounded-full uppercase tracking-widest transition-all">Get a Custom Quote</a>
+          <Link href="/en/get-a-quote" className="flex items-center justify-center gap-2 w-full bg-gold hover:bg-gold-dark text-black font-bold text-xs py-3 rounded-full uppercase tracking-widest transition-all">Get a Custom Quote</Link>
         </div>
       </div>
     </div></section>
