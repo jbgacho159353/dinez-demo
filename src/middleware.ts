@@ -4,6 +4,11 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Redirect root to default locale
+  if (pathname === "/") {
+    return NextResponse.redirect(new URL("/en", request.url));
+  }
+
   // Allow public routes
   if (
     pathname.startsWith("/_next") ||
