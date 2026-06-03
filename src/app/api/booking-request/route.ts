@@ -24,7 +24,6 @@ const VEHICLE_LABELS: Record<string, string> = {
   no_pref: "No Preference",
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type F = Record<string, any>;
 
 function extractJourney(journeyType: string, form: F) {
