@@ -276,7 +276,7 @@ export default function Navbar() {
                   {LOGIN_PORTALS.map((portal, i) => (
                     <a
                       key={portal.href}
-                      href={portal.href}
+                      href={`/${locale}/login`}
                       onClick={() => setLoginOpen(false)}
                       className="flex items-center gap-3 px-4 py-3.5 hover:bg-gold/10 transition-colors group"
                       style={
@@ -423,7 +423,7 @@ export default function Navbar() {
                   {LOGIN_PORTALS.map((portal) => (
                     <a
                       key={portal.href}
-                      href={portal.href}
+                      href={`/${locale}/login`}
                       onClick={() => setMobileOpen(false)}
                       className="flex items-center gap-3 px-6 py-3.5 text-sm text-gray-300 hover:text-gold hover:bg-gold/5 transition-colors border-b border-white/5 last:border-0"
                     >
