@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
+import Link from "next/link";
 
 const languages = [
   { code: "en", country: "gb", name: "English" },
@@ -274,11 +275,9 @@ export default function Navbar() {
                   style={{ background: "#1A1A1A", border: "1px solid rgba(201,164,53,0.4)" }}
                 >
                   {LOGIN_PORTALS.map((portal, i) => (
-                    <a
+                    <Link
                       key={portal.href}
                       href={portal.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       onClick={() => setLoginOpen(false)}
                       className="flex items-center gap-3 px-4 py-3.5 hover:bg-gold/10 transition-colors group"
                       style={
@@ -302,7 +301,7 @@ export default function Navbar() {
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -423,11 +422,9 @@ export default function Navbar() {
               {mobileExpanded === "LOGIN" && (
                 <div style={{ background: "#1A1A1A", borderTop: "1px solid rgba(201,164,53,0.2)", borderBottom: "1px solid rgba(201,164,53,0.2)" }}>
                   {LOGIN_PORTALS.map((portal) => (
-                    <a
+                    <Link
                       key={portal.href}
                       href={portal.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       onClick={() => setMobileOpen(false)}
                       className="flex items-center gap-3 px-6 py-3.5 text-sm text-gray-300 hover:text-gold hover:bg-gold/5 transition-colors border-b border-white/5 last:border-0"
                     >
@@ -436,7 +433,7 @@ export default function Navbar() {
                         <div className="font-medium">{portal.label}</div>
                         <div className="text-xs text-gray-600 mt-0.5">{portal.sub}</div>
                       </div>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}

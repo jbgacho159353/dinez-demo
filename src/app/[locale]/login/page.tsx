@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -198,10 +199,8 @@ export default function LoginPage() {
                 </ul>
 
                 {/* Button */}
-                <a
+                <Link
                   href={portal.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-sm font-bold uppercase tracking-widest transition-all duration-200 hover:scale-[1.02]"
                   style={
                     portal.variant === "filled"
@@ -213,7 +212,7 @@ export default function LoginPage() {
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </a>
+                </Link>
               </div>
             );
           })}
