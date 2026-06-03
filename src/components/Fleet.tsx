@@ -60,7 +60,7 @@ export default function Fleet() {
           {vehicles.map((vehicle, i) => (
             <div
               key={i}
-              className="group relative bg-dark-card border border-dark-border rounded-2xl overflow-hidden hover:border-gold/40 transition-all duration-500 hover:shadow-2xl hover:shadow-gold/10 hover:-translate-y-1"
+              className="group relative bg-dark-card border border-dark-border rounded-2xl overflow-hidden hover:border-gold/40 transition-all duration-500 hover:shadow-2xl hover:shadow-gold/10 hover:-translate-y-1 transform-gpu [will-change:transform]"
             >
               {/* Tag */}
               <div className="absolute top-4 left-4 z-10">
@@ -70,7 +70,7 @@ export default function Fleet() {
               </div>
 
               {/* Vehicle Image */}
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative h-56 overflow-hidden transform-gpu">
                 <Image
                   src={vehicle.img}
                   alt={vehicle.name}

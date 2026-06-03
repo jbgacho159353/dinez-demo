@@ -91,10 +91,10 @@ export default function Services() {
             <Link
               key={key}
               href={href}
-              className="group bg-dark-card border border-dark-border rounded-2xl overflow-hidden hover:border-gold/30 transition-all duration-300 hover:shadow-xl hover:shadow-gold/5 hover:-translate-y-0.5"
+              className="group bg-dark-card border border-dark-border rounded-2xl overflow-hidden hover:border-gold/30 transition-all duration-300 hover:shadow-xl hover:shadow-gold/5 hover:-translate-y-0.5 transform-gpu [will-change:transform]"
             >
               {/* Service Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden transform-gpu">
                 <Image
                   src={img}
                   alt={t(`${key}.name`)}
