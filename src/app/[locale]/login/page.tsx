@@ -200,6 +200,8 @@ export default function LoginPage() {
                 {/* Button */}
                 <a
                   href={portal.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-sm font-bold uppercase tracking-widest transition-all duration-200 hover:scale-[1.02]"
                   style={
                     portal.variant === "filled"
