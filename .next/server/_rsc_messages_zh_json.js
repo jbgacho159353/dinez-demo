@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_messages_zh_json";
+exports.ids = ["_rsc_messages_zh_json"];
+exports.modules = {
+
+/***/ "(rsc)/./messages/zh.json":
+/*!**************************!*\
+  !*** ./messages/zh.json ***!
+  \**************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"nav":{"home":"首页","services":"服务","fleet":"车队","about":"关于我们","contact":"联系我们","book":"立即预订"},"hero":{"tagline":"您的全球出行保障","heading":"豪华出租车及机场接送服务","subheading":"覆盖英国及海外的高端专属司机服务。可靠、专业，全天候24小时为您服务。","cta":"预订您的行程","ctaPhone":"立即致电"},"awards":{"title":"屡获殊荣的服务","tripadvisor":"9× TripAdvisor","tripadvisorSub":"卓越证书","google":"512+ 条评价","googleSub":"谷歌客户评价","years":"15+ 年","yearsSub":"卓越服务"},"fleet":{"title":"我们的豪华车队","subtitle":"体验无与伦比的舒适与精致","eclass":{"name":"奔驰E级","desc":"完美的高管商务轿车，融合优雅与动感性能，适合商务出行。","passengers":"3","luggage":"2"},"sclass":{"name":"奔驰S级","desc":"奢华的巅峰之作——专为贵宾接送和最尊贵场合而设。","passengers":"3","luggage":"3"},"vclass":{"name":"奔驰V级","desc":"宽敞豪华的多功能MPV，适合团体出行和机场接送。","passengers":"7","luggage":"7"},"passengers":"乘客","luggage":"行李","book":"预订此车型"},"services":{"title":"我们的服务","subtitle":"为每个场合量身定制的高端商务出行方案","airportTransfers":{"name":"机场接送","desc":"提供英国各大机场迎接服务，实时航班监控，免费等候时间。"},"chauffeurServices":{"name":"专属司机服务","desc":"为高管、董事会成员及商务宾客提供专业司机服务。"},"localTaxis":{"name":"本地出租车","desc":"可靠实惠的本地出租车服务，全天候24小时为您服务。"},"cruisePortTransfers":{"name":"邮轮港口接送","desc":"舒适接送英国各大邮轮港口，提供专业迎接服务。"},"dayTours":{"name":"一日游","desc":"由我们经验丰富的司机陪同，探索英国最美丽的目的地。"},"eventsOccasions":{"name":"活动及场合","desc":"婚礼、颁奖晚宴、剧院演出及各类特殊场合，让您优雅抵达。"},"weddingChauffeur":{"name":"婚礼专属司机","desc":"以我们精心呈现的豪华车辆和专业服务，让您的特别日子难忘。"}},"reviews":{"title":"客户评价","subtitle":"全球数千名满意客户的共同选择","review1":{"text":"从始至终服务卓越。司机准时、专业，车辆一尘不染。我一定会再次使用Dinez进行希思罗机场接送。","author":"詹姆斯·米切尔","location":"伦敦"},"review2":{"text":"我所有商务出行都选择Dinez。始终准时，车辆品质上乘，司机礼貌低调。强烈推荐。","author":"莎拉·威廉姆斯","location":"萨里"},"review3":{"text":"为婚礼预订了V级——服务完美无比。车辆呈现精美，司机出色友善。感谢Dinez！","author":"穆罕默德·拉希德","location":"汉普郡"}},"footer":{"tagline":"您的全球出行保障","contact":"联系我们","quickLinks":"快速链接","followUs":"关注我们","rights":"版权所有","privacy":"隐私政策","terms":"服务条款","home":"首页","services":"服务","fleet":"我们的车队","about":"关于我们","contact_link":"联系我们"},"whatsapp":"通过WhatsApp联系"}');
+
+/***/ })
+
+};
+;
