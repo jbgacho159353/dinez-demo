@@ -9,12 +9,11 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1920&q=80"
-          alt="Luxury Executive Car"
+          src="/assets/Hero-image.png"
+          alt="Dinez Executive Taxis"
           fill
-          className="object-cover object-center scale-105"
+          className="object-cover object-center"
           priority
-          unoptimized
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" />
