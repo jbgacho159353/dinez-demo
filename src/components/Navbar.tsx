@@ -134,7 +134,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href={`/${locale}`} className="flex items-center shrink-0 group">
             <Image
-              src="/assets/dinez_logo.png"
+              src="/assets/logo.png"
               alt="Dinez Executive Taxis"
               width={120}
               height={48}

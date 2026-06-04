@@ -104,7 +104,7 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-3">
               <Image
-                src="/assets/dinez_logo.png"
+                src="/assets/logo.png"
                 alt="Dinez Executive Taxis"
                 width={150}
                 height={60}

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dinez Executive Taxis & Airport Transfers",
     description: "Premium executive taxis and airport transfer services. Your Global Travel Certainty. Available 24/7.",
-    images: [{ url: "/assets/dinez_logo.png", width: 400, height: 200, alt: "Dinez Executive Taxis" }],
+    images: [{ url: "/assets/logo.png", width: 400, height: 200, alt: "Dinez Executive Taxis" }],
   },
 };
 
