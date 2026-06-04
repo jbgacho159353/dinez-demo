@@ -6,93 +6,107 @@ export default function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section id="home" className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/assets/Hero-image.png"
-          alt="Dinez Executive Taxis"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
+    <section
+      id="home"
+      className="bg-[#1A237E] min-h-[600px] lg:min-h-[700px] relative overflow-hidden"
+    >
+      {/* Subtle background texture */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1A237E] via-[#1A237E] to-[#0D1757] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(201,164,53,0.08),transparent_60%)] pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 py-12 lg:py-0 min-h-[600px] lg:min-h-[700px] flex items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full items-center">
+
+          {/* LEFT COLUMN — Text */}
+          <div className="order-2 lg:order-1 text-center lg:text-left py-4 lg:py-16">
+
+            {/* Tagline badge */}
+            <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-full px-5 py-2 mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
+              <span className="text-gold text-xs font-semibold tracking-[0.3em] uppercase">
+                {t("tagline")}
+              </span>
+            </div>
+
+            {/* Main Heading */}
+            <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-playfair font-bold leading-tight mb-6 tracking-tight">
+              {t("heading")}
+            </h1>
+
+            {/* Gold divider */}
+            <div className="flex items-center gap-4 mb-6 justify-center lg:justify-start">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-gold/60" />
+              <div className="w-1.5 h-1.5 rounded-full bg-gold" />
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-gold/60" />
+            </div>
+
+            {/* Subtitle */}
+            <p className="text-gray-300 text-base lg:text-lg mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+              {t("subheading")}
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+              <Link
+                href="/en/book-a-taxi"
+                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-[#F8F9FA] text-[#1A237E] font-bold px-8 py-4 rounded-lg text-sm lg:text-base uppercase tracking-wide transition-all duration-300 shadow-lg hover:scale-105"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                </svg>
+                {t("cta")}
+              </Link>
+
+              <Link
+                href="/en/get-a-quote"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-sm lg:text-base uppercase tracking-wide transition-all duration-300 hover:bg-white hover:text-[#1A237E]"
+              >
+                Get a Quote
+              </Link>
+            </div>
+
+            {/* Trust badges */}
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+              <div className="flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-4 py-2">
+                <span className="text-gold text-xs">★★★★★</span>
+                <span className="text-white text-xs font-medium">Google 4.9</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-4 py-2">
+                <span className="text-gold text-xs">🏆</span>
+                <span className="text-white text-xs font-medium">9x TripAdvisor</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-4 py-2">
+                <span className="text-white text-xs font-medium">✓ 24/7 Available</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-4 py-2">
+                <span className="text-white text-xs font-medium">✓ Meet &amp; Greet</span>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT COLUMN — Hero Image */}
+          <div className="order-1 lg:order-2 flex items-center justify-center px-0 lg:px-4">
+            <div className="relative w-full max-w-lg lg:max-w-full rounded-2xl overflow-hidden border-2 border-gold/30 shadow-2xl shadow-black/40">
+              <Image
+                src="/assets/Hero-image.avif"
+                alt="Dinez Executive Taxis"
+                width={800}
+                height={600}
+                priority
+                className="w-full h-64 sm:h-80 lg:h-[500px] object-cover object-center"
+              />
+              {/* Gold bottom accent */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gold" />
+              {/* Subtle vignette */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A237E]/20 via-transparent to-transparent pointer-events-none" />
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      {/* Gold accent lines */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
-
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto">
-        {/* Tagline Badge */}
-        <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 backdrop-blur-sm rounded-full px-5 py-2 mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
-          <span className="text-gold text-xs font-semibold tracking-[0.3em] uppercase">
-            {t("tagline")}
-          </span>
-        </div>
-
-        {/* Main Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-6 leading-[1.1] tracking-tight">
-          {t("heading")}
-        </h1>
-
-        {/* Gold divider */}
-        <div className="flex items-center justify-center gap-4 mb-6">
-          <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold/60" />
-          <div className="w-1.5 h-1.5 rounded-full bg-gold" />
-          <div className="h-px w-16 bg-gradient-to-l from-transparent to-gold/60" />
-        </div>
-
-        {/* Subheading */}
-        <p className="text-gray-300 text-base sm:text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
-          {t("subheading")}
-        </p>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link
-            href="/en/book-a-taxi"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-[#F8F9FA] text-[#1A237E] font-bold px-8 py-4 rounded-full text-sm uppercase tracking-[0.15em] transition-all duration-300 shadow-lg hover:scale-105"
-          >
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-            </svg>
-            {t("cta")}
-          </Link>
-          <a
-            href="tel:+4401252265363"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-[#1A237E] px-8 py-4 rounded-full text-sm uppercase tracking-[0.15em] transition-all duration-300 backdrop-blur-sm"
-          >
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-            </svg>
-            {t("ctaPhone")}
-          </a>
-        </div>
-
-        {/* Trust indicators */}
-        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mt-12 text-xs text-gray-400 uppercase tracking-widest">
-          <span className="flex items-center gap-1.5">
-            <span className="text-gold">★★★★★</span>
-            Google 4.9
-          </span>
-          <span className="hidden sm:inline text-dark-border">|</span>
-          <span>24/7 Available</span>
-          <span className="hidden sm:inline text-dark-border">|</span>
-          <span>Meet &amp; Greet</span>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-gold/40 animate-bounce">
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
-        </svg>
-      </div>
+      {/* Bottom gold accent line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
     </section>
   );
 }
