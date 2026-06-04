@@ -67,7 +67,7 @@ export default function ContactPage() {
                 </select>
               </div>
               <div><label className={label}>Message</label><textarea required value={form.message} onChange={e=>set("message",e.target.value)} placeholder="Tell us about your journey or enquiry..." rows={5} className={`${input} resize-none`} /></div>
-              <button type="submit" disabled={loading} className="w-full bg-[#1A237E] hover:bg-[#0D1757] text-white font-bold py-4 rounded-xl uppercase tracking-widest transition-all disabled:opacity-50 text-sm">
+              <button type="submit" disabled={loading} className="w-full bg-[#C8102E] hover:bg-[#A50D26] text-white font-bold py-4 rounded-xl uppercase tracking-widest transition-all disabled:opacity-50 text-sm">
                 {loading ? "Sending..." : "Send Message"}
               </button>
             </form>

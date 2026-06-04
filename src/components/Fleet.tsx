@@ -116,7 +116,7 @@ export default function Fleet() {
                 {/* CTA */}
                 <Link
                   href={`/${locale}/mercedes-benz-${vehicle.slug}`}
-                  className="flex items-center justify-center gap-2 w-full bg-[#1A237E] hover:bg-[#0D1757] text-white text-xs font-semibold py-3 rounded-full uppercase tracking-widest transition-all duration-300"
+                  className="flex items-center justify-center gap-2 w-full bg-[#C8102E] hover:bg-[#A50D26] text-white text-xs font-semibold py-3 rounded-full uppercase tracking-widest transition-all duration-300"
                 >
                   {t("book")}
                   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

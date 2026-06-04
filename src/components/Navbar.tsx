@@ -313,7 +313,7 @@ export default function Navbar() {
             {/* Book Now CTA */}
             <a
               href={`/${locale}/book-a-taxi`}
-              className="hidden sm:flex items-center gap-2 bg-[#1A237E] hover:bg-[#0D1757] text-white text-xs font-bold px-5 py-2.5 rounded-full transition-all duration-200 uppercase tracking-widest shadow-lg border border-white/20 hover:scale-105"
+              className="hidden sm:flex items-center gap-2 bg-[#C8102E] hover:bg-[#A50D26] text-white text-xs font-bold px-5 py-2.5 rounded-full transition-all duration-200 uppercase tracking-widest shadow-lg hover:scale-105"
             >
               {t("book")}
             </a>
@@ -445,7 +445,7 @@ export default function Navbar() {
             <div className="px-4 pt-3">
               <a
                 href={`/${locale}/book-a-taxi`}
-                className="flex items-center justify-center w-full bg-[#1A237E] hover:bg-[#0D1757] text-white font-bold py-3 rounded-full uppercase tracking-widest text-xs border border-white/20 transition-colors"
+                className="flex items-center justify-center w-full bg-[#C8102E] hover:bg-[#A50D26] text-white font-bold py-3 rounded-full uppercase tracking-widest text-xs transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 {t("book")}
