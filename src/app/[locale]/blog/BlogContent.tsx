@@ -17,29 +17,29 @@ export default function BlogPage() {
   const [active, setActive] = useState("All");
   const filtered = active === "All" ? posts : posts.filter(p => p.category === active);
   return (
-    <main className="bg-dark min-h-screen"><Navbar />
+    <main className="bg-white min-h-screen"><Navbar />
     <PageHero title="Dinez Journal" subtitle="Insights, guides and stories from the world of executive transport." breadcrumb="Company" />
     <section className="py-20 px-4 sm:px-6 lg:px-8"><div className="max-w-7xl mx-auto">
       {/* Category filter */}
       <div className="flex flex-wrap justify-center gap-3 mb-12">
         {categories.map(c=>(
-          <button key={c} onClick={()=>setActive(c)} className={`px-5 py-2 rounded-full text-sm font-medium uppercase tracking-wider transition-all ${active===c?"bg-gold text-black":"border border-dark-border text-gray-400 hover:border-gold hover:text-gold"}`}>{c}</button>
+          <button key={c} onClick={()=>setActive(c)} className={`px-5 py-2 rounded-full text-sm font-medium uppercase tracking-wider transition-all ${active===c?"bg-[#1A237E] text-white":"border border-gray-300 text-gray-600 hover:border-gold hover:text-gold"}`}>{c}</button>
         ))}
       </div>
       {/* Posts grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map(post=>(
-          <article key={post.slug} className="bg-dark-card border border-dark-border rounded-2xl overflow-hidden hover:border-gold/40 transition-all group cursor-pointer">
+          <article key={post.slug} className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-gold/40 transition-all group cursor-pointer shadow-sm hover:shadow-lg hover:shadow-gold/10 border-t-4 border-t-gold">
             <div className="relative h-48 overflow-hidden">
               <img src={post.img} alt={post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute top-3 left-3"><span className="bg-gold text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">{post.category}</span></div>
+              <div className="absolute top-3 left-3"><span className="bg-[#1A237E] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">{post.category}</span></div>
             </div>
             <div className="p-6">
               <div className="flex items-center gap-3 text-xs text-gray-500 mb-3">
                 <span>{post.date}</span><span>·</span><span>{post.readTime}</span>
               </div>
-              <h2 className="text-white font-bold text-base leading-snug mb-3 group-hover:text-gold transition-colors">{post.title}</h2>
-              <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">{post.excerpt}</p>
+              <h2 className="text-[#1A237E] font-bold text-base leading-snug mb-3 group-hover:text-gold transition-colors">{post.title}</h2>
+              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">{post.excerpt}</p>
               <div className="mt-4 flex items-center gap-1 text-gold text-sm font-medium group-hover:gap-2 transition-all">
                 Read More
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>

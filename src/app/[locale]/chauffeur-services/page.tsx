@@ -31,49 +31,49 @@ const inclusions = [
 
 export default function ChauffeurServicesPage() {
   return (
-    <main className="bg-dark min-h-screen">
+    <main className="bg-white min-h-screen">
       <Navbar />
       <PageHero title="Chauffeur Services" subtitle="Discreet, professional and immaculately presented — Dinez chauffeurs set the standard in executive ground transport." breadcrumb="Services" bgImage="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=80" />
 
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-playfair font-bold text-white mb-4">Chauffeur Service Types</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">Whatever the occasion, we have the right service and the right vehicle for you.</p>
+            <h2 className="text-4xl font-playfair font-bold text-[#1A237E] mb-4">Chauffeur Service Types</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">Whatever the occasion, we have the right service and the right vehicle for you.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {serviceTypes.map(s => (
-              <div key={s.name} className="bg-dark-card border border-dark-border rounded-2xl p-7 hover:border-gold/30 transition-all group">
+              <div key={s.name} className="bg-white border border-gray-200 rounded-2xl p-7 hover:border-gold/30 transition-all group shadow-sm">
                 <div className="text-4xl mb-4">{s.icon}</div>
-                <h3 className="text-white font-bold text-lg mb-2">{s.name}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{s.desc}</p>
+                <h3 className="text-[#1A237E] font-bold text-lg mb-2">{s.name}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-dark-surface">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-3">Every Journey Includes</p>
-              <h2 className="text-4xl font-playfair font-bold text-white mb-6">The Dinez Standard</h2>
+              <h2 className="text-4xl font-playfair font-bold text-[#1A237E] mb-6">The Dinez Standard</h2>
               <div className="grid grid-cols-1 gap-3">
                 {inclusions.map(item => (
                   <div key={item} className="flex items-center gap-3">
                     <svg className="w-5 h-5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
-                    <span className="text-gray-300 text-sm">{item}</span>
+                    <span className="text-gray-700 text-sm">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="bg-dark-card border border-dark-border rounded-2xl p-8">
-              <h3 className="text-2xl font-playfair font-bold text-white mb-6">Our Promise</h3>
+            <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+              <h3 className="text-2xl font-playfair font-bold text-[#1A237E] mb-6">Our Promise</h3>
               {[["On-Time Guarantee","Your driver is always there before you need to leave."],["Privacy First","All journeys are treated with the strictest confidentiality."],["No Hidden Costs","Fixed prices quoted before you book. Always."],["24/7 Availability","Day, night, weekends, bank holidays — we are always here."]].map(([t,d]) => (
                 <div key={t} className="mb-5 last:mb-0">
                   <div className="text-gold font-semibold text-sm mb-1">{t}</div>
-                  <div className="text-gray-400 text-sm">{d}</div>
+                  <div className="text-gray-600 text-sm">{d}</div>
                 </div>
               ))}
             </div>

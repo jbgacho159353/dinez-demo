@@ -12,19 +12,19 @@ const sections = [
 export default function CompanyPolicyPage() {
   const [open, setOpen] = useState<number|null>(0);
   return (
-    <main className="bg-dark min-h-screen"><Navbar />
+    <main className="bg-white min-h-screen"><Navbar />
     <PageHero title="Company Policy" subtitle="Our policies are designed to ensure clarity, fairness and the highest standards of service for every client." breadcrumb="Company" />
     <section className="py-20 px-4 sm:px-6 lg:px-8"><div className="max-w-4xl mx-auto space-y-4">
       {sections.map((s,i)=>(
-        <div key={i} className={`bg-dark-card border rounded-xl overflow-hidden transition-all ${open===i?"border-gold/40":"border-dark-border hover:border-gold/20"}`}>
+        <div key={i} className={`bg-dark-card border rounded-xl overflow-hidden transition-all ${open===i?"border-gold/40":"border-gray-200 hover:border-gold/20"}`}>
           <button className="w-full flex items-center justify-between p-6 text-left" onClick={()=>setOpen(open===i?null:i)}>
             <span className="text-white font-semibold">{s.title}</span>
             <svg className={`w-5 h-5 text-gold shrink-0 transition-transform duration-300 ${open===i?"rotate-180":""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/></svg>
           </button>
-          {open===i && <div className="px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-dark-border pt-5" dangerouslySetInnerHTML={{__html:s.body}} />}
+          {open===i && <div className="px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-5" dangerouslySetInnerHTML={{__html:s.body}} />}
         </div>
       ))}
-      <div className="bg-dark-card border border-dark-border rounded-xl p-6 text-sm text-gray-500">
+      <div className="bg-white border border-gray-200 rounded-xl p-6 text-sm text-gray-500">
         <p>Last updated: January 2025. Dinez Executive Taxis is licensed by Rushmoor Borough Council (Licence: 25/00699/TXOPR-1/5). For queries regarding these policies, contact <a href="mailto:bookings@dinez.co.uk" className="text-gold hover:underline">bookings@dinez.co.uk</a>.</p>
       </div>
     </div></section>

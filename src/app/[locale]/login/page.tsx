@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 const G = "#C9A435";
+const N = "#1A237E";
 
 function CrownIcon() {
   return (
@@ -36,11 +37,8 @@ function SteeringIcon() {
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
       <circle cx="24" cy="24" r="17" stroke={G} strokeWidth="1.5" />
       <circle cx="24" cy="24" r="5" stroke={G} strokeWidth="1.5" fill="rgba(201,164,53,0.2)" />
-      {/* Top spoke */}
       <line x1="24" y1="7" x2="24" y2="19" stroke={G} strokeWidth="2" strokeLinecap="round" />
-      {/* Bottom-left spoke (210°) */}
       <line x1="24" y1="29" x2="9.3" y2="32.5" stroke={G} strokeWidth="2" strokeLinecap="round" />
-      {/* Bottom-right spoke (330°) */}
       <line x1="24" y1="29" x2="38.7" y2="32.5" stroke={G} strokeWidth="2" strokeLinecap="round" />
     </svg>
   );
@@ -63,7 +61,7 @@ function BuildingIcon() {
 
 function CheckItem({ text }: { text: string }) {
   return (
-    <li className="flex items-center gap-2.5 text-sm text-gray-400">
+    <li className="flex items-center gap-2.5 text-sm text-gray-600">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0">
         <circle cx="8" cy="8" r="7" fill="rgba(201,164,53,0.12)" stroke={G} strokeWidth="1" />
         <path d="M5 8l2 2 4-4" stroke={G} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -136,7 +134,7 @@ const portals: Portal[] = [
 
 export default function LoginPage() {
   return (
-    <main style={{ background: "#0A0A0A" }} className="min-h-screen">
+    <main style={{ background: "#F8F9FA" }} className="min-h-screen">
       <Navbar />
 
       <section className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 py-32">
@@ -145,10 +143,10 @@ export default function LoginPage() {
           <p className="text-xs uppercase tracking-[0.35em] font-semibold mb-3" style={{ color: G }}>
             Portal Access
           </p>
-          <h1 className="text-4xl sm:text-5xl font-playfair font-bold text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-playfair font-bold text-[#1A237E] mb-4">
             Welcome Back
           </h1>
-          <p className="text-gray-400 text-lg">Select your portal to continue</p>
+          <p className="text-gray-600 text-lg">Select your portal to continue</p>
           <div className="flex items-center justify-center gap-4 mt-6">
             <div className="h-px w-20 bg-gradient-to-r from-transparent to-[rgba(201,164,53,0.6)]" />
             <div className="w-1.5 h-1.5 rounded-full" style={{ background: G }} />
@@ -165,12 +163,14 @@ export default function LoginPage() {
                 key={portal.href}
                 className="
                   flex flex-col rounded-2xl p-8
-                  bg-[rgba(201,164,53,0.04)]
-                  border border-[rgba(201,164,53,0.22)]
-                  hover:border-[rgba(201,164,53,0.7)]
+                  bg-white
+                  border-t-4 border-t-[#1A237E]
+                  border border-gray-200
+                  hover:border-[#1A237E]/40
                   hover:-translate-y-2
-                  hover:shadow-[0_8px_48px_-4px_rgba(201,164,53,0.22)]
+                  hover:shadow-[0_8px_48px_-4px_rgba(26,35,126,0.15)]
                   transition-all duration-300
+                  shadow-sm
                 "
               >
                 {/* Icon */}
@@ -182,12 +182,12 @@ export default function LoginPage() {
                 </div>
 
                 {/* Title */}
-                <h2 className="text-xl font-playfair font-bold text-white mb-3">
+                <h2 className="text-xl font-playfair font-bold text-[#1A237E] mb-3">
                   {portal.title}
                 </h2>
 
                 {/* Description */}
-                <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
                   {portal.description}
                 </p>
 
@@ -205,7 +205,7 @@ export default function LoginPage() {
                   style={
                     portal.variant === "filled"
                       ? { background: G, color: "#000" }
-                      : { background: "transparent", border: `1.5px solid ${G}`, color: G }
+                      : { background: "transparent", border: `1.5px solid ${N}`, color: N }
                   }
                 >
                   {portal.button}
@@ -235,7 +235,7 @@ export default function LoginPage() {
                 Contact Support
               </a>
             </p>
-            <p className="text-gray-600 text-xs">© 2025 Dinez Executive Taxis</p>
+            <p className="text-gray-400 text-xs">© 2025 Dinez Executive Taxis</p>
           </div>
         </div>
       </section>

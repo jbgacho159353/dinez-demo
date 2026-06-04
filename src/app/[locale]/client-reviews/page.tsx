@@ -21,7 +21,7 @@ const platformStats = [
 
 export default function ReviewsPage() {
   return (
-    <main className="bg-dark min-h-screen">
+    <main className="bg-white min-h-screen">
       <Navbar />
 
       <PageHero
@@ -31,7 +31,7 @@ export default function ReviewsPage() {
       />
 
       {/* Platform stats bar */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-dark-surface border-b border-dark-border">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA] border-b border-gray-200">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-wrap justify-center gap-4">
             {platformStats.map((p) => (

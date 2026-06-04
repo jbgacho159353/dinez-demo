@@ -40,7 +40,7 @@ export default function ReviewsFilter() {
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                 active === f
                   ? "bg-gold text-dark"
-                  : "bg-dark-card text-gray-400 border border-dark-border hover:text-white hover:border-gold/30"
+                  : "bg-dark-card text-gray-400 border border-gray-200 hover:text-white hover:border-gold/30"
               }`}
             >
               {f}
@@ -85,7 +85,7 @@ export default function ReviewsFilter() {
                 </div>
 
                 {/* Text */}
-                <p className="text-gray-300 text-sm leading-relaxed italic flex-1 mb-5">
+                <p className="text-gray-700 text-sm leading-relaxed italic flex-1 mb-5">
                   &ldquo;{review.text}&rdquo;
                 </p>
 
@@ -110,11 +110,11 @@ export default function ReviewsFilter() {
         </div>
 
         {/* Leave a Review */}
-        <div className="bg-dark-card border border-gold/20 rounded-2xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-playfair font-bold text-white mb-3">
+        <div className="bg-white border border-gold/20 rounded-2xl p-8 md:p-12 text-center">
+          <h3 className="text-2xl md:text-3xl font-playfair font-bold text-[#1A237E] mb-3">
             Had a great experience? We&apos;d love to hear from you!
           </h3>
-          <p className="text-gray-400 mb-8 max-w-xl mx-auto">
+          <p className="text-gray-600 mb-8 max-w-xl mx-auto">
             Your review helps other travellers discover Dinez and motivates our team to keep
             delivering excellence.
           </p>

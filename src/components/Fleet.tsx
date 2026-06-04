@@ -37,17 +37,17 @@ export default function Fleet() {
   ];
 
   return (
-    <section id="fleet" className="py-24 px-4 sm:px-6 lg:px-8 bg-dark">
+    <section id="fleet" className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-3">
             Premium Vehicles
           </p>
-          <h2 className="text-4xl sm:text-5xl font-playfair font-bold text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl font-playfair font-bold text-[#1A237E] mb-4">
             {t("title")}
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">{t("subtitle")}</p>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">{t("subtitle")}</p>
           <div className="flex items-center justify-center gap-4 mt-6">
             <div className="h-px w-20 bg-gradient-to-r from-transparent to-gold/60" />
             <div className="w-1.5 h-1.5 rounded-full bg-gold" />
@@ -60,7 +60,7 @@ export default function Fleet() {
           {vehicles.map((vehicle, i) => (
             <div
               key={i}
-              className="group relative bg-dark-card border border-dark-border rounded-2xl hover:border-gold/40 transition-[border-color,box-shadow,transform] duration-500 hover:shadow-2xl hover:shadow-gold/10 hover:-translate-y-1"
+              className="group relative bg-white border border-gray-200 rounded-2xl hover:border-gold/40 transition-[border-color,box-shadow,transform] duration-500 hover:shadow-2xl hover:shadow-gold/10 hover:-translate-y-1"
             >
               {/* Tag */}
               <div className="absolute top-4 left-4 z-10">
@@ -78,21 +78,21 @@ export default function Fleet() {
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
                   unoptimized
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-playfair font-bold text-white mb-2">
+                <h3 className="text-xl font-playfair font-bold text-[#1A237E] mb-2">
                   {vehicle.name}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-5">
+                <p className="text-gray-600 text-sm leading-relaxed mb-5">
                   {vehicle.desc}
                 </p>
 
                 {/* Specs */}
-                <div className="flex items-center gap-4 mb-6 py-4 border-y border-dark-border">
-                  <div className="flex items-center gap-2 text-sm text-gray-300">
+                <div className="flex items-center gap-4 mb-6 py-4 border-y border-gray-200">
+                  <div className="flex items-center gap-2 text-sm text-gray-700">
                     <svg className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
                     </svg>
@@ -101,8 +101,8 @@ export default function Fleet() {
                       {t("passengers")}
                     </span>
                   </div>
-                  <div className="w-px h-4 bg-dark-border" />
-                  <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <div className="w-px h-4 bg-gray-200" />
+                  <div className="flex items-center gap-2 text-sm text-gray-700">
                     <svg className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clipRule="evenodd" />
                     </svg>

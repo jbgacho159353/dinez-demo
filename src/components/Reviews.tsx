@@ -24,14 +24,14 @@ export default function Reviews() {
   }
 
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-dark relative overflow-hidden">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
       <style>{`
         @keyframes reviewFadeIn {
           from { opacity: 0; transform: translateY(16px); }
           to   { opacity: 1; transform: translateY(0); }
         }
         .review-fadein { animation: reviewFadeIn 0.45s ease-out forwards; }
-        .review-card:hover { box-shadow: 0 0 28px rgba(212,175,55,0.18); }
+        .review-card:hover { box-shadow: 0 0 28px rgba(201,164,53,0.15); }
       `}</style>
 
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none" />
@@ -42,10 +42,10 @@ export default function Reviews() {
           <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-3">
             Testimonials
           </p>
-          <h2 className="text-4xl sm:text-5xl font-playfair font-bold text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl font-playfair font-bold text-[#1A237E] mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Over 800 five-star reviews across Google, TripAdvisor, Yell and more
           </p>
           <div className="flex items-center justify-center gap-4 mt-6">
@@ -55,8 +55,8 @@ export default function Reviews() {
           </div>
           <p className="text-gray-500 text-sm mt-4">
             Showing{" "}
-            <span className="text-white font-semibold">{Math.min(visible, total)}</span> of{" "}
-            <span className="text-white font-semibold">{total}</span> reviews
+            <span className="text-[#1A237E] font-semibold">{Math.min(visible, total)}</span> of{" "}
+            <span className="text-[#1A237E] font-semibold">{total}</span> reviews
           </p>
         </div>
 
@@ -70,9 +70,9 @@ export default function Reviews() {
                 key={review.id}
                 className={`review-card flex flex-col rounded-2xl p-6 transition-all duration-300${isNew ? " review-fadein" : ""}`}
                 style={{
-                  background: "#1A1A1A",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  borderLeft: "3px solid #D4AF37",
+                  background: "#FFFFFF",
+                  border: "1px solid #E5E7EB",
+                  borderLeft: "3px solid #C9A435",
                 }}
               >
                 {/* Stars + platform badge */}
@@ -91,14 +91,14 @@ export default function Reviews() {
                 </div>
 
                 {/* Review text */}
-                <p className="text-gray-300 text-sm leading-relaxed italic flex-1 mb-5">
+                <p className="text-gray-700 text-sm leading-relaxed italic flex-1 mb-5">
                   &ldquo;{review.text}&rdquo;
                 </p>
 
                 {/* Author */}
                 <div
                   className="flex items-center gap-3 pt-4"
-                  style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
+                  style={{ borderTop: "1px solid #E5E7EB" }}
                 >
                   <div className="w-9 h-9 rounded-full bg-gold/20 border border-gold/30 flex items-center justify-center flex-shrink-0">
                     <span className="text-gold font-bold text-sm">
@@ -106,7 +106,7 @@ export default function Reviews() {
                     </span>
                   </div>
                   <div>
-                    <div className="text-white text-sm font-bold">{review.name}</div>
+                    <div className="text-[#1A237E] text-sm font-bold">{review.name}</div>
                     <div className="text-gray-500 text-xs">{review.date}</div>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ export default function Reviews() {
           {visible < total ? (
             <button
               onClick={showMore}
-              className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-dark font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105 active:scale-95"
+              className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-black font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105 active:scale-95"
             >
               View More Reviews ({visible} of {total}) →
             </button>
@@ -129,14 +129,14 @@ export default function Reviews() {
               href="https://g.page/dineztaxis/review"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-dark font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105"
+              className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-black font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105"
             >
               View All Reviews on Google →
             </a>
           )}
           <p className="text-gray-500 text-xs">
             <span className="text-gold font-semibold">★ 4.9/5</span> average from{" "}
-            <span className="text-white font-semibold">512+ verified reviews</span>
+            <span className="text-[#1A237E] font-semibold">512+ verified reviews</span>
           </p>
         </div>
       </div>

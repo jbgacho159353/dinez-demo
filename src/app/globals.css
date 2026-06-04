@@ -5,11 +5,21 @@
 :root {
   --font-inter: "Inter", sans-serif;
   --font-playfair: "Playfair Display", serif;
+  --color-bg: #FFFFFF;
+  --color-bg-secondary: #F8F9FA;
+  --color-navbar: #1A237E;
+  --color-footer: #1A237E;
+  --color-heading: #1A237E;
+  --color-text: #333333;
+  --color-gold: #C9A435;
+  --color-red: #C8102E;
+  --color-card: #FFFFFF;
+  --color-border: #E5E7EB;
 }
 
 body {
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background-color: #FFFFFF;
+  color: #333333;
   overflow-x: hidden;
 }
 
@@ -22,7 +32,7 @@ body {
   }
 
   .border-gold-glow {
-    box-shadow: 0 0 20px rgba(201, 168, 76, 0.15);
+    box-shadow: 0 0 20px rgba(201, 164, 53, 0.15);
   }
 }
 
@@ -34,9 +44,9 @@ html {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #f8f9fa;
 }
 ::-webkit-scrollbar-thumb {
-  background: #c9a84c;
+  background: #c9a435;
   border-radius: 3px;
 }

@@ -837,7 +837,7 @@ function SharedBottom({ form, set, err }: { form: FormState; set: SF; err: E }) 
       <div>
         <GoldH>Vehicle Preference</GoldH>
         {suggested && form.vehicle === "no_pref" && suggestedName && (
-          <p className="text-xs text-gray-400 mb-3">
+          <p className="text-xs text-gray-600 mb-3">
             Based on {pax} passenger{pax > 1 ? "s" : ""}, we suggest the {suggestedName}
           </p>
         )}
@@ -961,10 +961,10 @@ function SuccessState({
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
         </svg>
       </div>
-      <h2 className="text-3xl font-playfair font-bold text-white mb-3">
+      <h2 className="text-3xl font-playfair font-bold text-[#1A237E] mb-3">
         Booking Request Received!
       </h2>
-      <p className="text-gray-400 mb-6">Thank you {name}. Your reference is:</p>
+      <p className="text-gray-600 mb-6">Thank you {name}. Your reference is:</p>
       <div className="bg-[#111] border border-[#C9A84C]/30 rounded-xl px-8 py-5 inline-block mb-6">
         <p className="text-gray-500 text-xs uppercase tracking-widest mb-1">Booking Reference</p>
         <p className="text-3xl font-playfair font-bold text-[#C9A84C]">{bookingRef}</p>
@@ -1221,7 +1221,7 @@ export default function BookingWizard() {
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold text-[#1A237E] mb-6 leading-tight">
             SECURE YOUR 5-STAR
             <br className="hidden sm:block" />
             EXECUTIVE TRANSFER
@@ -1306,10 +1306,10 @@ export default function BookingWizard() {
             <p className="text-[#C9A84C] text-xs uppercase tracking-[0.3em] font-semibold mb-2">
               Quote Request
             </p>
-            <h2 className="text-3xl font-playfair font-bold text-white mb-2">
+            <h2 className="text-3xl font-playfair font-bold text-[#1A237E] mb-2">
               Request Your Booking
             </h2>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-600 text-sm">
               Complete the form — your Client Coordinator will confirm your fixed rate.
             </p>
           </div>
