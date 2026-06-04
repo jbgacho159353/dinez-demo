@@ -16,7 +16,7 @@ function StarIcon() {
 }
 
 const REVIEW_LINKS = [
-  { label: "⭐ Review us on Google", href: "https://g.page/dineztaxis/review", color: "#1A237E" },
+  { label: "⭐ Review us on Google", href: "https://g.page/dineztaxis/review", color: "#4285F4" },
   { label: "🏆 Review on TripAdvisor", href: "#", color: "#00AF87" },
   { label: "📋 Review on Yell", href: "#", color: "#FF6B00" },
   { label: "📱 Review on FreeIndex", href: "#", color: "#8B5CF6" },
@@ -39,8 +39,8 @@ export default function ReviewsFilter() {
               onClick={() => setActive(f)}
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                 active === f
-                  ? "bg-[#C9A435] text-white"
-                  : "bg-white text-gray-600 border border-gray-200 hover:text-[#C8102E] hover:border-[#C8102E]/30"
+                  ? "bg-gold text-dark"
+                  : "bg-dark-card text-gray-400 border border-gray-200 hover:text-white hover:border-gold/30"
               }`}
             >
               {f}
@@ -136,7 +136,7 @@ export default function ReviewsFilter() {
 
           <Link
             href="/en/book-a-taxi"
-            className="inline-flex items-center gap-2 bg-[#C9A435] hover:bg-[#0D1757] text-white font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105"
+            className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-dark font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105"
           >
             Book Your Next Journey →
           </Link>

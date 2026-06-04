@@ -45,7 +45,7 @@ export default function GetAQuotePage() {
           </div>
           <h1 className="text-3xl font-playfair font-bold text-[#1A237E] mb-2">Quote Request Sent!</h1>
           <p className="text-gray-600 text-sm mb-8">We will contact you within 2 hours with a detailed quote. Check your email at <span className="text-white">{form.email}</span>.</p>
-          <a href="/" className="bg-[#C9A435] hover:bg-[#B8932E] text-white font-bold px-8 py-3 rounded-full uppercase tracking-wider text-sm transition-all">Back to Home</a>
+          <a href="/" className="bg-gold hover:bg-gold-dark text-black font-bold px-8 py-3 rounded-full uppercase tracking-wider text-sm transition-all">Back to Home</a>
         </div>
       </div>
       <Footer />
@@ -123,7 +123,7 @@ export default function GetAQuotePage() {
                 <textarea value={form.requirements} onChange={e => set("requirements", e.target.value)} placeholder="Child seat, meet & greet, special instructions..." rows={3} className={`${inputClass} resize-none`} />
               </div>
             </div>
-            <button type="submit" disabled={loading} className="w-full bg-[#C9A435] hover:bg-[#B8932E] text-white font-bold py-4 rounded-xl uppercase tracking-widest transition-all disabled:opacity-50 text-sm">
+            <button type="submit" disabled={loading} className="w-full bg-gold hover:bg-gold-dark text-black font-bold py-4 rounded-xl uppercase tracking-widest transition-all disabled:opacity-50 text-sm">
               {loading ? "Sending..." : "Request Free Quote"}
             </button>
             <p className="text-center text-gray-500 text-xs">We respond within 2 hours · No obligation · Fixed prices</p>
