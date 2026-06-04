@@ -96,7 +96,7 @@ export default function Footer() {
   const p = `/${locale}`;
 
   return (
-    <footer id="contact" className="bg-[#1A237E] border-t-2 border-gold">
+    <footer id="contact" className="bg-[#0A0A0A] border-t-2 border-gold">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
 

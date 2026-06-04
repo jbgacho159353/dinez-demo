@@ -39,7 +39,7 @@ export default function ReviewsFilter() {
               onClick={() => setActive(f)}
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                 active === f
-                  ? "bg-[#C8102E] text-white"
+                  ? "bg-[#C9A435] text-white"
                   : "bg-white text-gray-600 border border-gray-200 hover:text-[#C8102E] hover:border-[#C8102E]/30"
               }`}
             >
@@ -136,7 +136,7 @@ export default function ReviewsFilter() {
 
           <Link
             href="/en/book-a-taxi"
-            className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#0D1757] text-white font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105"
+            className="inline-flex items-center gap-2 bg-[#C9A435] hover:bg-[#0D1757] text-white font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105"
           >
             Book Your Next Journey →
           </Link>

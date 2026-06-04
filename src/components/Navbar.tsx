@@ -125,8 +125,8 @@ export default function Navbar() {
       ref={menuRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#1A237E] shadow-xl shadow-navy/30 border-b border-gold/20"
-          : "bg-[#1A237E]/95 backdrop-blur-sm"
+          ? "bg-[#0A0A0A] shadow-xl shadow-navy/30 border-b border-gold/20"
+          : "bg-[#0A0A0A]/95 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -282,7 +282,7 @@ export default function Navbar() {
                       key={portal.href}
                       href={portal.href}
                       onClick={() => setLoginOpen(false)}
-                      className="flex items-center gap-3 px-4 py-3.5 hover:bg-[#1A237E]/5 transition-colors group"
+                      className="flex items-center gap-3 px-4 py-3.5 hover:bg-[#0A0A0A]/5 transition-colors group"
                       style={
                         i < LOGIN_PORTALS.length - 1
                           ? { borderBottom: "1px solid rgba(26,35,126,0.08)" }
@@ -313,7 +313,7 @@ export default function Navbar() {
             {/* Book Now CTA */}
             <a
               href={`/${locale}/book-a-taxi`}
-              className="hidden sm:flex items-center gap-2 bg-[#C8102E] hover:bg-[#A50D26] text-white text-xs font-bold px-5 py-2.5 rounded-full transition-all duration-200 uppercase tracking-widest shadow-lg hover:scale-105"
+              className="hidden sm:flex items-center gap-2 bg-[#C9A435] hover:bg-[#B8932E] text-black text-xs font-bold px-5 py-2.5 rounded-full transition-all duration-200 uppercase tracking-widest shadow-lg hover:scale-105"
             >
               {t("book")}
             </a>
@@ -337,7 +337,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {mobileOpen && (
-          <div className="lg:hidden border-t border-white/20 bg-[#1A237E] pb-4">
+          <div className="lg:hidden border-t border-white/20 bg-[#0A0A0A] pb-4">
             {[...directLinks, { label: "LOCATIONS", href: "/locations" }].map((link) => (
               <a
                 key={link.href}
@@ -366,7 +366,7 @@ export default function Navbar() {
                   </svg>
                 </button>
                 {mobileExpanded === menu.label && (
-                  <div className="bg-[#141966] border-y border-white/10">
+                  <div className="bg-[#111111] border-y border-white/10">
                     {menu.items.map((item) => (
                       <a
                         key={item.href}
@@ -445,7 +445,7 @@ export default function Navbar() {
             <div className="px-4 pt-3">
               <a
                 href={`/${locale}/book-a-taxi`}
-                className="flex items-center justify-center w-full bg-[#C8102E] hover:bg-[#A50D26] text-white font-bold py-3 rounded-full uppercase tracking-widest text-xs transition-colors"
+                className="flex items-center justify-center w-full bg-[#C9A435] hover:bg-[#B8932E] text-black font-bold py-3 rounded-full uppercase tracking-widest text-xs transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 {t("book")}
