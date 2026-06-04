@@ -16,7 +16,7 @@ const sections = [
 ];
 export default function PrivacyPage() {
   return (
-    <main className="bg-white min-h-screen"><Navbar />
+    <main className="bg-dark min-h-screen"><Navbar />
     <PageHero title="Privacy Policy" subtitle="We take your privacy seriously. This policy explains how we collect, use and protect your personal data." breadcrumb="Company" />
     <section className="py-20 px-4 sm:px-6 lg:px-8"><div className="max-w-4xl mx-auto">
       <div className="bg-gold/5 border border-gold/20 rounded-xl p-5 mb-8 text-sm text-gray-300">
@@ -24,9 +24,9 @@ export default function PrivacyPage() {
       </div>
       <div className="space-y-8">
         {sections.map((s,i)=>(
-          <div key={i} className="bg-white border border-gray-200 rounded-xl p-7">
-            <h2 className="text-lg font-bold text-[#1A237E] mb-3">{s.title}</h2>
-            <p className="text-gray-600 text-sm leading-relaxed">{s.body}</p>
+          <div key={i} className="bg-dark-card border border-dark-border rounded-xl p-7">
+            <h2 className="text-lg font-bold text-white mb-3">{s.title}</h2>
+            <p className="text-gray-400 text-sm leading-relaxed">{s.body}</p>
           </div>
         ))}
       </div>

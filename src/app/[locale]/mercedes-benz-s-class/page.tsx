@@ -30,7 +30,7 @@ const gallery = [
 
 export default function VehiclePage() {
   return (
-    <main className="bg-white min-h-screen">
+    <main className="bg-dark min-h-screen">
       <Navbar />
       <PageHero
         title="Mercedes S-Class"
@@ -40,7 +40,7 @@ export default function VehiclePage() {
       />
 
       {/* Specs strip */}
-      <section className="bg-[#F8F9FA] border-y border-gray-200 py-8">
+      <section className="bg-dark-surface border-y border-dark-border py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
@@ -51,7 +51,7 @@ export default function VehiclePage() {
             ].map(s => (
               <div key={s.label}>
                 <div className="text-3xl font-playfair font-bold text-gold">{s.value}</div>
-                <div className="text-gray-600 text-sm mt-1 uppercase tracking-wider">{s.label}</div>
+                <div className="text-gray-400 text-sm mt-1 uppercase tracking-wider">{s.label}</div>
               </div>
             ))}
           </div>
@@ -64,23 +64,23 @@ export default function VehiclePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-3">About This Vehicle</p>
-              <h2 className="text-4xl font-playfair font-bold text-[#1A237E] mb-5">The World's Premier Luxury Saloon</h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <h2 className="text-4xl font-playfair font-bold text-white mb-5">The World's Premier Luxury Saloon</h2>
+              <p className="text-gray-400 leading-relaxed mb-6">
                 The Mercedes S-Class represents the perfect blend of executive comfort and modern technology. Driven by our DBS-checked, professionally trained chauffeurs, every journey delivers an unrivalled standard of service from door to door.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-8">
+              <p className="text-gray-400 leading-relaxed mb-8">
                 Whether you are heading to Heathrow, attending a board meeting, or celebrating a special occasion, the Mercedes S-Class ensures you arrive refreshed, on time, and in complete luxury.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link href="/en/book-a-taxi" className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-black font-bold px-7 py-3.5 rounded-full text-sm uppercase tracking-wider transition-all shadow-lg shadow-gold/20 hover:scale-105">
                   Book This Vehicle
                 </Link>
-                <Link href="/en/get-a-quote" className="inline-flex items-center justify-center gap-2 border border-[#1A237E]/40 hover:border-[#1A237E] text-[#1A237E] px-7 py-3.5 rounded-full text-sm uppercase tracking-wider transition-all">
+                <Link href="/en/get-a-quote" className="inline-flex items-center justify-center gap-2 border border-gold/40 hover:border-gold text-gold px-7 py-3.5 rounded-full text-sm uppercase tracking-wider transition-all">
                   Get a Quote
                 </Link>
               </div>
             </div>
-            <div className="relative h-80 rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+            <div className="relative h-80 rounded-2xl overflow-hidden border border-dark-border">
               <Image src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80" alt="Mercedes S-Class" fill className="object-cover" unoptimized />
               <div className="absolute top-4 right-4">
                 <span className="bg-gold text-black text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">From £80</span>
@@ -92,13 +92,13 @@ export default function VehiclePage() {
           <div className="mb-20">
             <div className="text-center mb-10">
               <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-3">Included As Standard</p>
-              <h2 className="text-4xl font-playfair font-bold text-[#1A237E]">Vehicle Amenities</h2>
+              <h2 className="text-4xl font-playfair font-bold text-white">Vehicle Amenities</h2>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
               {amenities.map((a) => (
-                <div key={a.label} className="bg-white border border-gray-200 rounded-2xl p-5 text-center hover:border-gold/30 transition-all shadow-sm">
+                <div key={a.label} className="bg-dark-card border border-dark-border rounded-2xl p-5 text-center hover:border-gold/30 transition-all">
                   <div className="text-3xl mb-3">{a.icon}</div>
-                  <div className="text-[#1A237E] text-sm font-medium">{a.label}</div>
+                  <div className="text-white text-sm font-medium">{a.label}</div>
                 </div>
               ))}
             </div>
@@ -107,11 +107,11 @@ export default function VehiclePage() {
           {/* Gallery */}
           <div className="mb-20">
             <div className="text-center mb-10">
-              <h2 className="text-4xl font-playfair font-bold text-[#1A237E]">Photo Gallery</h2>
+              <h2 className="text-4xl font-playfair font-bold text-white">Photo Gallery</h2>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {gallery.map((src, i) => (
-                <div key={i} className="relative h-48 rounded-xl overflow-hidden border border-gray-200 group cursor-pointer shadow-sm">
+                <div key={i} className="relative h-48 rounded-xl overflow-hidden border border-dark-border group cursor-pointer">
                   <Image src={src} alt={"Mercedes S-Class gallery " + (i+1)} fill className="object-cover group-hover:scale-110 transition-transform duration-500" unoptimized />
                 </div>
               ))}

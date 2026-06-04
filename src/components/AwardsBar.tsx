@@ -7,8 +7,8 @@ export default function AwardsBar() {
     {
       icon: (
         <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
-          <circle cx="20" cy="20" r="18" stroke="#C9A435" strokeWidth="1.5" />
-          <path d="M20 8l2.9 8.9H32l-7.5 5.4 2.9 8.9L20 26.8l-7.4 4.4 2.9-8.9L8 16.9h9.1z" fill="#C9A435" />
+          <circle cx="20" cy="20" r="18" stroke="#C9A84C" strokeWidth="1.5" />
+          <path d="M20 8l2.9 8.9H32l-7.5 5.4 2.9 8.9L20 26.8l-7.4 4.4 2.9-8.9L8 16.9h9.1z" fill="#C9A84C" />
         </svg>
       ),
       value: "9×",
@@ -18,8 +18,8 @@ export default function AwardsBar() {
     {
       icon: (
         <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
-          <circle cx="20" cy="20" r="18" stroke="#C9A435" strokeWidth="1.5" />
-          <text x="50%" y="55%" textAnchor="middle" fill="#C9A435" fontSize="14" fontWeight="bold" dy=".3em">G</text>
+          <circle cx="20" cy="20" r="18" stroke="#C9A84C" strokeWidth="1.5" />
+          <text x="50%" y="55%" textAnchor="middle" fill="#C9A84C" fontSize="14" fontWeight="bold" dy=".3em">G</text>
         </svg>
       ),
       value: "512+",
@@ -29,8 +29,8 @@ export default function AwardsBar() {
     {
       icon: (
         <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
-          <circle cx="20" cy="20" r="18" stroke="#C9A435" strokeWidth="1.5" />
-          <text x="50%" y="55%" textAnchor="middle" fill="#C9A435" fontSize="13" fontWeight="bold" dy=".3em">Y</text>
+          <circle cx="20" cy="20" r="18" stroke="#C9A84C" strokeWidth="1.5" />
+          <text x="50%" y="55%" textAnchor="middle" fill="#C9A84C" fontSize="13" fontWeight="bold" dy=".3em">Y</text>
         </svg>
       ),
       value: "55+",
@@ -40,8 +40,8 @@ export default function AwardsBar() {
     {
       icon: (
         <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
-          <circle cx="20" cy="20" r="18" stroke="#C9A435" strokeWidth="1.5" />
-          <text x="50%" y="55%" textAnchor="middle" fill="#C9A435" fontSize="10" fontWeight="bold" dy=".3em">FI</text>
+          <circle cx="20" cy="20" r="18" stroke="#C9A84C" strokeWidth="1.5" />
+          <text x="50%" y="55%" textAnchor="middle" fill="#C9A84C" fontSize="10" fontWeight="bold" dy=".3em">FI</text>
         </svg>
       ),
       value: "75+",
@@ -51,9 +51,9 @@ export default function AwardsBar() {
   ];
 
   return (
-    <section className="bg-[#1A237E] border-y border-white/20 py-10">
+    <section className="bg-dark-surface border-y border-dark-border py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x lg:divide-white/20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x lg:divide-dark-border">
           {awards.map((award, i) => (
             <div
               key={i}
@@ -67,7 +67,7 @@ export default function AwardsBar() {
                 <div className="text-white text-xs sm:text-sm font-semibold tracking-wide leading-tight">
                   {award.label}
                 </div>
-                <div className="text-gray-300 text-xs tracking-wider mt-0.5">{award.sub}</div>
+                <div className="text-gray-500 text-xs tracking-wider mt-0.5">{award.sub}</div>
               </div>
             </div>
           ))}

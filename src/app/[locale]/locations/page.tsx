@@ -16,24 +16,24 @@ const areas = [
 ];
 export default function LocationsPage() {
   return (
-    <main className="bg-white min-h-screen"><Navbar />
+    <main className="bg-dark min-h-screen"><Navbar />
     <PageHero title="Locations We Serve" subtitle="Based in Aldershot, we provide executive transport services across Hampshire, Surrey, Berkshire and Greater London." breadcrumb="Company" />
     <section className="py-20 px-4 sm:px-6 lg:px-8"><div className="max-w-7xl mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-20">
         {areas.map(a=>(
-          <div key={a.name} className="bg-white border border-gray-200 rounded-2xl p-6 hover:border-gold/30 transition-all">
+          <div key={a.name} className="bg-dark-card border border-dark-border rounded-2xl p-6 hover:border-gold/30 transition-all">
             <div className="flex items-start justify-between mb-3">
               <h3 className="text-white font-bold text-lg">{a.name}</h3>
               <span className="text-xs text-gold bg-gold/10 px-2 py-0.5 rounded-full">{a.county}</span>
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed mb-3">{a.desc}</p>
+            <p className="text-gray-400 text-sm leading-relaxed mb-3">{a.desc}</p>
             <p className="text-gray-600 text-xs">{a.notable}</p>
           </div>
         ))}
       </div>
       {/* Map */}
-      <div className="rounded-2xl overflow-hidden border border-gray-200">
-        <div className="bg-[#F8F9FA] px-6 py-4 border-b border-gray-200">
+      <div className="rounded-2xl overflow-hidden border border-dark-border">
+        <div className="bg-dark-surface px-6 py-4 border-b border-dark-border">
           <h3 className="text-white font-semibold">📍 Our Base — 151 Grosvenor Road, Aldershot GU11 3EF</h3>
         </div>
         <iframe src="https://maps.google.com/maps?q=151+Grosvenor+Road+Aldershot+GU11+3EF&output=embed" width="100%" height="400" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Dinez Executive Taxis Location" />

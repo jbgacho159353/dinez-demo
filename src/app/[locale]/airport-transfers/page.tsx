@@ -28,7 +28,7 @@ const usps = [
 
 export default function AirportTransfersPage() {
   return (
-    <main className="bg-white min-h-screen">
+    <main className="bg-dark min-h-screen">
       <Navbar />
       <PageHero title="Airport Transfers" subtitle="Professional, punctual transfers to every major UK airport. Your flight is tracked — we are always there." breadcrumb="Services" bgImage="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80" />
 
@@ -37,18 +37,18 @@ export default function AirportTransfersPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-3">We Cover</p>
-            <h2 className="text-4xl font-playfair font-bold text-[#1A237E]">Major UK Airports</h2>
+            <h2 className="text-4xl font-playfair font-bold text-white">Major UK Airports</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {airports.map(a => (
-              <div key={a.code} className="bg-white border border-gray-200 rounded-2xl p-6 hover:border-gold/40 transition-all group shadow-sm">
+              <div key={a.code} className="bg-dark-card border border-dark-border rounded-2xl p-6 hover:border-gold/40 transition-all group">
                 <div className="flex items-start justify-between mb-4">
                   <span className="text-3xl">{a.emoji}</span>
                   <span className="bg-gold/10 text-gold text-xs font-bold px-3 py-1 rounded-full">{a.code}</span>
                 </div>
-                <h3 className="text-[#1A237E] font-bold text-lg mb-1">{a.name}</h3>
+                <h3 className="text-white font-bold text-lg mb-1">{a.name}</h3>
                 <p className="text-gray-500 text-sm mb-3">{a.terminals}</p>
-                <div className="flex items-center gap-2 text-sm text-gray-600">
+                <div className="flex items-center gap-2 text-sm text-gray-400">
                   <svg className="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
                   From Aldershot: {a.distance}
                 </div>
@@ -60,17 +60,17 @@ export default function AirportTransfersPage() {
       </section>
 
       {/* USPs */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA]">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-dark-surface">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-playfair font-bold text-[#1A237E]">Why Choose Dinez for Airport Transfers?</h2>
+            <h2 className="text-4xl font-playfair font-bold text-white">Why Choose Dinez for Airport Transfers?</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {usps.map(u => (
-              <div key={u.title} className="bg-white border border-gray-200 rounded-2xl p-6 text-center hover:border-gold/30 transition-all shadow-sm">
+              <div key={u.title} className="bg-dark-card border border-dark-border rounded-2xl p-6 text-center hover:border-gold/30 transition-all">
                 <div className="text-4xl mb-4">{u.icon}</div>
-                <h3 className="text-[#1A237E] font-bold mb-2">{u.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{u.desc}</p>
+                <h3 className="text-white font-bold mb-2">{u.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{u.desc}</p>
               </div>
             ))}
           </div>
@@ -80,11 +80,11 @@ export default function AirportTransfersPage() {
       {/* Areas */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-playfair font-bold text-[#1A237E] mb-4">Areas We Serve</h2>
-          <p className="text-gray-600 mb-8">Based in Aldershot, we cover the whole of Hampshire, Surrey, Berkshire and Greater London.</p>
+          <h2 className="text-4xl font-playfair font-bold text-white mb-4">Areas We Serve</h2>
+          <p className="text-gray-400 mb-8">Based in Aldershot, we cover the whole of Hampshire, Surrey, Berkshire and Greater London.</p>
           <div className="flex flex-wrap justify-center gap-3">
             {["Aldershot","Fleet","Farnham","Farnborough","Guildford","Camberley","Basingstoke","Winchester","Andover","Reading","Windsor","Bracknell","Woking","London","Heathrow Area"].map(a => (
-              <span key={a} className="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm hover:border-gold hover:text-gold transition-all cursor-default shadow-sm">{a}</span>
+              <span key={a} className="bg-dark-card border border-dark-border text-gray-300 px-4 py-2 rounded-full text-sm hover:border-gold hover:text-gold transition-all cursor-default">{a}</span>
             ))}
           </div>
         </div>

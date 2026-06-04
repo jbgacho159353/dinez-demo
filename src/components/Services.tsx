@@ -69,16 +69,16 @@ export default function Services() {
   const t = useTranslations("services");
 
   return (
-    <section id="services" className="py-24 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA]">
+    <section id="services" className="py-24 px-4 sm:px-6 lg:px-8 bg-dark-surface">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-3">
             What We Offer
           </p>
-          <h2 className="text-4xl sm:text-5xl font-playfair font-bold text-[#1A237E] mb-4">
+          <h2 className="text-4xl sm:text-5xl font-playfair font-bold text-white mb-4">
             {t("title")}
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">{t("subtitle")}</p>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">{t("subtitle")}</p>
           <div className="flex items-center justify-center gap-4 mt-6">
             <div className="h-px w-20 bg-gradient-to-r from-transparent to-gold/60" />
             <div className="w-1.5 h-1.5 rounded-full bg-gold" />
@@ -91,7 +91,7 @@ export default function Services() {
             <Link
               key={key}
               href={href}
-              className="group bg-white border border-gray-200 rounded-2xl hover:border-gold/30 transition-[border-color,box-shadow,transform] duration-300 hover:shadow-xl hover:shadow-gold/5 hover:-translate-y-0.5"
+              className="group bg-dark-card border border-dark-border rounded-2xl hover:border-gold/30 transition-[border-color,box-shadow,transform] duration-300 hover:shadow-xl hover:shadow-gold/5 hover:-translate-y-0.5"
             >
               {/* Service Image */}
               <div className="relative h-48 overflow-hidden rounded-t-2xl">
@@ -101,7 +101,7 @@ export default function Services() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-white/10 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-card via-dark-card/20 to-transparent" />
               </div>
 
               {/* Content */}
@@ -109,10 +109,10 @@ export default function Services() {
                 <div className="w-12 h-12 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center text-gold mb-4 group-hover:bg-gold/15 transition-colors duration-300">
                   {icon}
                 </div>
-                <h3 className="text-base font-semibold text-[#1A237E] mb-2">
+                <h3 className="text-base font-semibold text-white mb-2">
                   {t(`${key}.name`)}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-400 text-sm leading-relaxed">
                   {t(`${key}.desc`)}
                 </p>
                 <div className="mt-4 flex items-center gap-2 text-gold/60 text-xs uppercase tracking-widest group-hover:text-gold transition-colors duration-300">

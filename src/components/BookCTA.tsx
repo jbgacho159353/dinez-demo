@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function BookCTA({ heading = "Ready to Book Your Luxury Transfer?" }: { heading?: string }) {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#1A237E] relative overflow-hidden">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-dark-surface relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-gold/5 via-transparent to-gold/5" />
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-3">Get In Touch</p>
         <h2 className="text-4xl sm:text-5xl font-playfair font-bold text-white mb-4">{heading}</h2>
-        <p className="text-gray-200 text-lg mb-10 max-w-2xl mx-auto">
+        <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
           Available 24/7. Pre-booking recommended. Instant confirmation by email.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -15,7 +15,7 @@ export default function BookCTA({ heading = "Ready to Book Your Luxury Transfer?
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" /></svg>
             Book Online
           </Link>
-          <a href="tel:+4401252265363" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-gold text-white hover:text-gold px-8 py-4 rounded-full text-sm uppercase tracking-widest transition-all duration-300">
+          <a href="tel:+4401252265363" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-gold/50 hover:border-gold text-white hover:text-gold px-8 py-4 rounded-full text-sm uppercase tracking-widest transition-all duration-300">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
             +44 01252 265363
           </a>

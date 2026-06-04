@@ -36,32 +36,32 @@ const faqs = [
 export default function FAQPage() {
   const [open, setOpen] = useState<string|null>(null);
   return (
-    <main className="bg-white min-h-screen"><Navbar />
+    <main className="bg-dark min-h-screen"><Navbar />
     <PageHero title="Frequently Asked Questions" subtitle="Everything you need to know about booking with Dinez Executive Taxis." breadcrumb="Company" />
     <section className="py-20 px-4 sm:px-6 lg:px-8"><div className="max-w-4xl mx-auto space-y-12">
       {faqs.map(section=>(
         <div key={section.section}>
-          <h2 className="text-2xl font-playfair font-bold text-[#1A237E] mb-6 pb-3 border-b border-gray-200">{section.section}</h2>
+          <h2 className="text-2xl font-playfair font-bold text-gold mb-6 pb-3 border-b border-dark-border">{section.section}</h2>
           <div className="space-y-3">
             {section.items.map((item,i)=>{
               const id = `${section.section}-${i}`;
               const isOpen = open === id;
               return (
-                <div key={i} className={`bg-white border rounded-xl overflow-hidden transition-all shadow-sm ${isOpen?"border-l-4 border-l-[#1A237E] border-gray-200":"border-gray-200 hover:border-gold/30"}`}>
+                <div key={i} className={`bg-dark-card border rounded-xl overflow-hidden transition-all ${isOpen?"border-gold/40":"border-dark-border hover:border-gold/20"}`}>
                   <button className="w-full flex items-center justify-between p-5 text-left" onClick={()=>setOpen(isOpen?null:id)}>
-                    <span className="text-[#1A237E] font-medium pr-4">{item.q}</span>
+                    <span className="text-white font-medium pr-4">{item.q}</span>
                     <svg className={`w-5 h-5 text-gold shrink-0 transition-transform duration-300 ${isOpen?"rotate-180":""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/></svg>
                   </button>
-                  {isOpen && <div className="px-5 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">{item.a}</div>}
+                  {isOpen && <div className="px-5 pb-5 text-gray-400 text-sm leading-relaxed border-t border-dark-border pt-4">{item.a}</div>}
                 </div>
               );
             })}
           </div>
         </div>
       ))}
-      <div className="bg-[#1A237E]/5 border border-[#1A237E]/20 rounded-2xl p-8 text-center">
-        <h3 className="text-2xl font-playfair font-bold text-[#1A237E] mb-3">Still Have a Question?</h3>
-        <p className="text-gray-600 mb-6">Our team is available 24/7. Call, WhatsApp or email us and we will answer immediately.</p>
+      <div className="bg-gold/5 border border-gold/20 rounded-2xl p-8 text-center">
+        <h3 className="text-2xl font-playfair font-bold text-white mb-3">Still Have a Question?</h3>
+        <p className="text-gray-400 mb-6">Our team is available 24/7. Call, WhatsApp or email us and we will answer immediately.</p>
         <div className="flex flex-wrap justify-center gap-3">
           <a href="tel:+4401252265363" className="bg-gold hover:bg-gold-dark text-black font-bold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider transition-all">Call Now</a>
           <a href="https://wa.me/447778356571" className="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider transition-all">WhatsApp</a>
@@ -69,7 +69,6 @@ export default function FAQPage() {
         </div>
       </div>
     </div></section>
-    <BookCTA />
     <Footer /><WhatsAppButton /></main>
   );
 }

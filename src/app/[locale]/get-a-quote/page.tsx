@@ -31,20 +31,20 @@ export default function GetAQuotePage() {
     finally { setLoading(false); }
   };
 
-  const inputClass = "w-full bg-dark border border-gray-200 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-gold transition-colors";
+  const inputClass = "w-full bg-dark border border-dark-border rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-gold transition-colors";
   const labelClass = "block text-sm text-gray-300 mb-1.5 font-medium";
-  const selectClass = "w-full bg-dark border border-gray-200 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors";
+  const selectClass = "w-full bg-dark border border-dark-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors";
 
   if (submitted) return (
-    <main className="bg-white min-h-screen">
+    <main className="bg-dark min-h-screen">
       <Navbar />
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-md">
           <div className="w-20 h-20 bg-gold/20 border-2 border-gold rounded-full flex items-center justify-center mx-auto mb-6">
             <svg className="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
           </div>
-          <h1 className="text-3xl font-playfair font-bold text-[#1A237E] mb-2">Quote Request Sent!</h1>
-          <p className="text-gray-600 text-sm mb-8">We will contact you within 2 hours with a detailed quote. Check your email at <span className="text-white">{form.email}</span>.</p>
+          <h1 className="text-3xl font-playfair font-bold text-white mb-2">Quote Request Sent!</h1>
+          <p className="text-gray-400 text-sm mb-8">We will contact you within 2 hours with a detailed quote. Check your email at <span className="text-white">{form.email}</span>.</p>
           <a href="/" className="bg-gold hover:bg-gold-dark text-black font-bold px-8 py-3 rounded-full uppercase tracking-wider text-sm transition-all">Back to Home</a>
         </div>
       </div>
@@ -53,16 +53,16 @@ export default function GetAQuotePage() {
   );
 
   return (
-    <main className="bg-white min-h-screen">
+    <main className="bg-dark min-h-screen">
       <Navbar />
       <section className="pt-36 pb-8 text-center px-4">
         <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-3">Free Estimate</p>
-        <h1 className="text-5xl font-playfair font-bold text-[#1A237E] mb-4">Get a Quote</h1>
+        <h1 className="text-5xl font-playfair font-bold text-white mb-4">Get a Quote</h1>
         <p className="text-gray-400 text-lg max-w-xl mx-auto">Fill in the form and we will send you a detailed quote within 2 hours.</p>
       </section>
       <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <form onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-2xl p-8 space-y-6">
+          <form onSubmit={handleSubmit} className="bg-dark-card border border-dark-border rounded-2xl p-8 space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className={labelClass}>Journey Type</label>
@@ -111,7 +111,7 @@ export default function GetAQuotePage() {
                 </div>
               )}
             </div>
-            <div className="border-t border-gray-200 pt-6 space-y-4">
+            <div className="border-t border-dark-border pt-6 space-y-4">
               <h3 className="text-white font-semibold">Your Details</h3>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div><label className={labelClass}>Full Name</label><input required type="text" value={form.name} onChange={e => set("name", e.target.value)} placeholder="John Smith" className={inputClass} /></div>
