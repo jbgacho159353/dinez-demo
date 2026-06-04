@@ -40,9 +40,9 @@ export default function DashboardSidebar({ adminEmail }: { adminEmail?: string }
         <Image
           src="/assets/logo.png"
           alt="Dinez Executive Taxis"
-          width={120}
-          height={48}
-          className="h-12 w-auto object-contain mb-1"
+          width={160}
+          height={64}
+          className="h-16 w-auto object-contain mb-1"
         />
         <div className="text-[10px] text-gray-500 tracking-[0.3em] mt-0.5">
           ADMIN DASHBOARD

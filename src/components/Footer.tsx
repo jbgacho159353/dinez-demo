@@ -106,9 +106,9 @@ export default function Footer() {
               <Image
                 src="/assets/logo.png"
                 alt="Dinez Executive Taxis"
-                width={150}
-                height={60}
-                className="h-14 w-auto object-contain"
+                width={180}
+                height={72}
+                className="h-20 w-auto object-contain"
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-1 font-medium">Your Global Travel Certainty</p>

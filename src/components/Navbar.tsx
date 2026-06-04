@@ -136,10 +136,10 @@ export default function Navbar() {
             <Image
               src="/assets/logo.png"
               alt="Dinez Executive Taxis"
-              width={120}
-              height={48}
+              width={160}
+              height={64}
               priority
-              className="h-12 w-auto object-contain group-hover:opacity-80 transition-opacity"
+              className="h-16 w-auto object-contain group-hover:opacity-80 transition-opacity"
             />
           </a>
 
