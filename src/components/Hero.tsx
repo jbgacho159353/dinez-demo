@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(201,164,53,0.08),transparent_60%)] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 py-12 lg:py-0 min-h-[600px] lg:min-h-[700px] flex items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-8 lg:gap-12 w-full items-center">
 
           {/* LEFT COLUMN — Text */}
           <div className="order-2 lg:order-1 text-center lg:text-left py-4 lg:py-16">
@@ -49,7 +49,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <Link
                 href="/en/book-a-taxi"
-                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-[#F8F9FA] text-[#1A237E] font-bold px-8 py-4 rounded-lg text-sm lg:text-base uppercase tracking-wide transition-all duration-300 shadow-lg hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 bg-[#C8102E] hover:bg-[#A50D26] text-white font-bold px-8 py-4 rounded-lg text-sm lg:text-base uppercase tracking-wide transition-all duration-300 shadow-lg hover:scale-105"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -59,7 +59,7 @@ export default function Hero() {
 
               <Link
                 href="/en/get-a-quote"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-sm lg:text-base uppercase tracking-wide transition-all duration-300 hover:bg-white hover:text-[#1A237E]"
+                className="inline-flex items-center justify-center gap-2 border-2 border-[#C8102E] text-white font-bold px-8 py-4 rounded-lg text-sm lg:text-base uppercase tracking-wide transition-all duration-300 hover:bg-[#C8102E]"
               >
                 Get a Quote
               </Link>
@@ -85,21 +85,15 @@ export default function Hero() {
           </div>
 
           {/* RIGHT COLUMN — Hero Image */}
-          <div className="order-1 lg:order-2 flex items-center justify-center px-0 lg:px-4">
-            <div className="relative w-full max-w-lg lg:max-w-full rounded-2xl overflow-hidden border-2 border-gold/30 shadow-2xl shadow-black/40">
-              <Image
-                src="/assets/Hero-image.avif"
-                alt="Dinez Executive Taxis"
-                width={800}
-                height={600}
-                priority
-                className="w-full h-64 sm:h-80 lg:h-[500px] object-cover object-center"
-              />
-              {/* Gold bottom accent */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gold" />
-              {/* Subtle vignette */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1A237E]/20 via-transparent to-transparent pointer-events-none" />
-            </div>
+          <div className="order-1 lg:order-2 flex items-center justify-center">
+            <Image
+              src="/assets/Hero-image.avif"
+              alt="Dinez Executive Taxis"
+              width={600}
+              height={700}
+              priority
+              className="w-full h-64 sm:h-80 lg:h-[600px] object-cover object-center"
+            />
           </div>
 
         </div>
