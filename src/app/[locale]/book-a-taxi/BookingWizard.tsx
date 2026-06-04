@@ -1356,7 +1356,7 @@ export default function BookingWizard() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full flex items-center justify-center gap-3 bg-[#C9A84C] hover:bg-[#A07830] text-black font-bold py-4 rounded-xl uppercase tracking-widest text-sm transition-all disabled:opacity-60"
+                    className="w-full flex items-center justify-center gap-3 bg-[#1A237E] hover:bg-[#0D1757] text-white font-bold py-4 rounded-xl uppercase tracking-widest text-sm transition-all disabled:opacity-60"
                   >
                     {loading ? (
                       <>

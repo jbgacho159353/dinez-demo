@@ -56,7 +56,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/en/book-a-taxi"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-black font-bold px-8 py-4 rounded-full text-sm uppercase tracking-[0.15em] transition-all duration-300 shadow-lg shadow-gold/30 hover:shadow-gold/50 hover:scale-105"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-[#F8F9FA] text-[#1A237E] font-bold px-8 py-4 rounded-full text-sm uppercase tracking-[0.15em] transition-all duration-300 shadow-lg hover:scale-105"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -65,7 +65,7 @@ export default function Hero() {
           </Link>
           <a
             href="tel:+4401252265363"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-gold text-white hover:text-gold px-8 py-4 rounded-full text-sm uppercase tracking-[0.15em] transition-all duration-300 backdrop-blur-sm hover:bg-gold/5"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-[#1A237E] px-8 py-4 rounded-full text-sm uppercase tracking-[0.15em] transition-all duration-300 backdrop-blur-sm"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />

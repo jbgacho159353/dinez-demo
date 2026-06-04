@@ -115,7 +115,7 @@ export default function Services() {
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {t(`${key}.desc`)}
                 </p>
-                <div className="mt-4 flex items-center gap-2 text-gold/60 text-xs uppercase tracking-widest group-hover:text-gold transition-colors duration-300">
+                <div className="mt-4 flex items-center gap-2 text-[#1A237E] text-xs uppercase tracking-widest group-hover:text-[#C9A435] transition-colors duration-300">
                   <span>Learn more</span>
                   <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

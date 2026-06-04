@@ -120,7 +120,7 @@ export default function Reviews() {
           {visible < total ? (
             <button
               onClick={showMore}
-              className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-black font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105 active:scale-95"
+              className="inline-flex items-center gap-2 bg-[#1A237E] hover:bg-[#0D1757] text-white font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105 active:scale-95"
             >
               View More Reviews ({visible} of {total}) →
             </button>
@@ -129,7 +129,7 @@ export default function Reviews() {
               href="https://g.page/dineztaxis/review"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-black font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105"
+              className="inline-flex items-center gap-2 bg-[#1A237E] hover:bg-[#0D1757] text-white font-bold px-8 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-105"
             >
               View All Reviews on Google →
             </a>
