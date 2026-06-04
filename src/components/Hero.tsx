@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
@@ -9,8 +10,19 @@ export default function Hero() {
       id="home"
       className="bg-[#1A237E] min-h-[600px] lg:min-h-[700px] relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1A237E] via-[#1A237E] to-[#0D1757] pointer-events-none" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(201,164,53,0.08),transparent_60%)] pointer-events-none" />
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/assets/Hero-image.avif"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center"
+        />
+        {/* Left-heavy overlay so left-aligned text is readable; image shows through on the right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1A237E]/95 via-[#1A237E]/75 to-[#1A237E]/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1A237E]/40 via-transparent to-[#1A237E]/60" />
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 min-h-[600px] lg:min-h-[700px] flex items-center py-24 lg:py-0">
         <div className="w-full max-w-3xl">
