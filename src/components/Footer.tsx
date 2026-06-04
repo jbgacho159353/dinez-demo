@@ -1,4 +1,5 @@
 import { useLocale } from "next-intl";
+import Image from "next/image";
 
 const serviceLinks = [
   { label: "Local Taxis", href: "/local-taxis" },
@@ -102,10 +103,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-3">
-              <span className="text-3xl font-playfair font-bold text-gradient-gold tracking-[0.2em]">DINEZ</span>
-              <div className="text-[10px] text-gold/60 uppercase tracking-[0.35em] mt-0.5">
-                Executive Taxis &amp; Airport Transfers
-              </div>
+              <Image
+                src="/assets/dinez_logo.png"
+                alt="Dinez Executive Taxis"
+                width={150}
+                height={60}
+                className="h-14 w-auto object-contain"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-1 font-medium">Your Global Travel Certainty</p>
             <p className="text-gray-500 text-xs leading-relaxed mb-5">

@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 const languages = [
   { code: "en", country: "gb", name: "English" },
@@ -131,13 +132,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href={`/${locale}`} className="flex flex-col leading-none group shrink-0">
-            <span className="text-2xl sm:text-3xl font-playfair font-bold text-gradient-gold tracking-[0.2em] group-hover:opacity-80 transition-opacity">
-              DINEZ
-            </span>
-            <span className="text-[9px] text-gold/60 uppercase tracking-[0.35em] mt-0.5">
-              Executive Taxis
-            </span>
+          <a href={`/${locale}`} className="flex items-center shrink-0 group">
+            <Image
+              src="/assets/dinez_logo.png"
+              alt="Dinez Executive Taxis"
+              width={120}
+              height={48}
+              priority
+              className="h-12 w-auto object-contain group-hover:opacity-80 transition-opacity"
+            />
           </a>
 
           {/* Desktop Nav */}
