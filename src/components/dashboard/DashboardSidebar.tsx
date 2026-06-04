@@ -38,7 +38,7 @@ export default function DashboardSidebar({ adminEmail }: { adminEmail?: string }
     <div className="flex flex-col h-full">
       <div className="px-6 py-6 border-b border-white/5 flex-shrink-0">
         <Image
-          src="/assets/logo.png"
+          src="/assets/Dinez-Taxis-and-Airport-Transfers.avif"
           alt="Dinez Executive Taxis"
           width={160}
           height={64}
