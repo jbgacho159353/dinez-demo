@@ -1,25 +1,24 @@
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section id="home" className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/assets/hero-image.jpg"
-          alt="Dinez Executive Taxis"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-      </div>
+    <section
+      id="home"
+      className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: "url('/assets/hero-image.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Dark overlay so text is readable */}
+      <div className="absolute inset-0 bg-black/65" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
 
       {/* Gold accent lines */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
