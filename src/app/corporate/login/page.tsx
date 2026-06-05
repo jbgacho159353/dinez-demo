@@ -93,7 +93,7 @@ export default function CorporateLogin() {
           <p className="text-gray-400 text-sm">
             Not registered?{' '}
             <a
-              href="mailto:bookings@dinez.co.uk"
+              href="mailto:bookings@dinez-executive.com"
               className="text-[#C9A435] hover:underline"
             >
               Contact us

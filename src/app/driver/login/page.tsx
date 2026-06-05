@@ -38,7 +38,7 @@ export default function DriverLoginPage() {
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
             <label className="block text-xs text-gray-400 mb-1.5 uppercase tracking-wider">Email</label>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="driver@dinez.co.uk" className="w-full px-4 py-3 rounded-lg text-white text-sm outline-none" style={{ background: "#111", border: "1px solid rgba(255,255,255,0.1)" }} />
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="driver@dinez-executive.com" className="w-full px-4 py-3 rounded-lg text-white text-sm outline-none" style={{ background: "#111", border: "1px solid rgba(255,255,255,0.1)" }} />
           </div>
           <div>
             <label className="block text-xs text-gray-400 mb-1.5 uppercase tracking-wider">Password</label>

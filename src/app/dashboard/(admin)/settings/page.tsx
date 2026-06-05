@@ -53,10 +53,10 @@ export default function SettingsPage() {
 
   const [business, setBusiness] = useState({
     name: "Dinez Executive Taxis",
-    phone: "+44 01252 265363",
-    whatsapp: "+44 01252 265363",
-    email: "info@dinez.co.uk",
-    address: "Aldershot, Hampshire, GU11",
+    phone: "+63 912 345 6789",
+    whatsapp: "+63 912 345 6789",
+    email: "info@dinez-executive.com",
+    address: "London, EC1A 1BB",
     license: "",
   });
 

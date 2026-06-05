@@ -976,9 +976,9 @@ function SuccessState({
       </p>
       <p className="text-gray-500 text-sm mb-8">
         Urgent? Call{" "}
-        <a href="tel:+4401252265363" className="text-[#C9A84C] hover:underline">+44 01252 265363</a>{" "}
+        <a href="tel:+639123456789" className="text-[#C9A84C] hover:underline">+63 912 345 6789</a>{" "}
         or WhatsApp{" "}
-        <a href="https://wa.me/447778356571" className="text-[#C9A84C] hover:underline">+44 7778 356571</a>
+        <a href="https://wa.me/639666358012" className="text-[#C9A84C] hover:underline">+63 966 635 8012</a>
       </p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
         <a
@@ -1116,7 +1116,7 @@ function buildCalUrl(tab: TabId, form: FormState, ref: string): string {
   return (
     `https://calendar.google.com/calendar/render?action=TEMPLATE` +
     `&text=${encodeURIComponent(`Dinez Transfer — ${ref}`)}` +
-    `&details=${encodeURIComponent(`Ref: ${ref} | +44 01252 265363`)}` +
+    `&details=${encodeURIComponent(`Ref: ${ref} | +63 912 345 6789`)}` +
     `&dates=${d}T${ts}/${d}T${te}`
   );
 }
@@ -1162,7 +1162,7 @@ export default function BookingWizard() {
       scrollToForm();
     } catch (err) {
       console.error(err);
-      alert("Submission failed. Please call us on +44 01252 265363.");
+      alert("Submission failed. Please call us on +63 912 345 6789.");
     } finally {
       setLoading(false);
     }

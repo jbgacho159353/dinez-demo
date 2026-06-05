@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import Link from "next/link";
-import Image from "next/image";
 
 const languages = [
   { code: "en", country: "gb", name: "English" },
@@ -113,6 +112,19 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", close);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
+
+  // Close mobile menu on Escape
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setMobileOpen(false); };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, []);
+
   const switchLocale = (code: string) => {
     router.replace(pathname, { locale: code });
     setLangOpen(false);
@@ -132,15 +144,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href={`/${locale}`} className="flex items-center shrink-0 group">
-            <Image
-              src="/assets/Dinez-Taxis-and-Airport-Transfers.avif"
-              alt="Dinez Executive Taxis"
-              width={160}
-              height={64}
-              priority
-              className="h-16 w-auto object-contain group-hover:opacity-80 transition-opacity"
-            />
+          <a href={`/${locale}`} className="flex flex-col shrink-0 group leading-none">
+            <span className="text-gold font-playfair italic text-lg sm:text-xl font-bold group-hover:opacity-80 transition-opacity">
+              Executive
+            </span>
+            <span className="text-white text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] uppercase group-hover:opacity-80 transition-opacity">
+              Taxis &amp; Airport Transfers
+            </span>
           </a>
 
           {/* Desktop Nav */}
@@ -337,7 +347,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {mobileOpen && (
-          <div className="lg:hidden border-t border-dark-border bg-black/98 pb-4">
+          <div className="lg:hidden border-t border-dark-border bg-black/98 pb-4 overflow-y-auto max-h-[calc(100vh-5rem)]">
             {[...directLinks, { label: "LOCATIONS", href: "/locations" }].map((link) => (
               <a
                 key={link.href}

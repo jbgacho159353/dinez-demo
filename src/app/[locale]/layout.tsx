@@ -28,15 +28,9 @@ export const metadata: Metadata = {
     "Premium executive taxis and airport transfer services. Your Global Travel Certainty. Available 24/7.",
   keywords:
     "executive taxi, airport transfer, chauffeur, Aldershot, Hampshire, Surrey",
-  icons: {
-    icon: "/assets/Dinez-Taxis-and-Airport-Transfers.avif",
-    shortcut: "/assets/Dinez-Taxis-and-Airport-Transfers.avif",
-    apple: "/assets/Dinez-Taxis-and-Airport-Transfers.avif",
-  },
   openGraph: {
-    title: "Dinez Executive Taxis & Airport Transfers",
+    title: "Executive Taxis & Airport Transfers",
     description: "Premium executive taxis and airport transfer services. Your Global Travel Certainty. Available 24/7.",
-    images: [{ url: "/assets/Dinez-Taxis-and-Airport-Transfers.avif", width: 400, height: 200, alt: "Dinez Executive Taxis" }],
   },
 };
 

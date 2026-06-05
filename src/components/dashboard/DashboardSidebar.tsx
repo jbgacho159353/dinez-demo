@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { createBrowserClient } from "@supabase/ssr";
 
@@ -37,13 +36,10 @@ export default function DashboardSidebar({ adminEmail }: { adminEmail?: string }
   const NavContent = (
     <div className="flex flex-col h-full">
       <div className="px-6 py-6 border-b border-white/5 flex-shrink-0">
-        <Image
-          src="/assets/Dinez-Taxis-and-Airport-Transfers.avif"
-          alt="Dinez Executive Taxis"
-          width={160}
-          height={64}
-          className="h-16 w-auto object-contain mb-1"
-        />
+        <div className="leading-none mb-1">
+          <div className="text-gold font-playfair italic text-xl font-bold">Executive</div>
+          <div className="text-white text-[9px] font-semibold tracking-[0.18em] uppercase mt-0.5">Taxis &amp; Airport Transfers</div>
+        </div>
         <div className="text-[10px] text-gray-500 tracking-[0.3em] mt-0.5">
           ADMIN DASHBOARD
         </div>

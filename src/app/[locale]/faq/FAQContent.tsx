@@ -63,9 +63,9 @@ export default function FAQPage() {
         <h3 className="text-2xl font-playfair font-bold text-white mb-3">Still Have a Question?</h3>
         <p className="text-gray-400 mb-6">Our team is available 24/7. Call, WhatsApp or email us and we will answer immediately.</p>
         <div className="flex flex-wrap justify-center gap-3">
-          <a href="tel:+4401252265363" className="bg-gold hover:bg-gold-dark text-black font-bold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider transition-all">Call Now</a>
-          <a href="https://wa.me/447778356571" className="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider transition-all">WhatsApp</a>
-          <a href="mailto:bookings@dinez.co.uk" className="border border-gold/40 hover:border-gold text-gold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider transition-all">Email Us</a>
+          <a href="tel:+639123456789" className="bg-gold hover:bg-gold-dark text-black font-bold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider transition-all">Call Now</a>
+          <a href="https://wa.me/639666358012" className="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider transition-all">WhatsApp</a>
+          <a href="mailto:bookings@dinez-executive.com" className="border border-gold/40 hover:border-gold text-gold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider transition-all">Email Us</a>
         </div>
       </div>
     </div></section>

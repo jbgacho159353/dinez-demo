@@ -27,7 +27,7 @@ export default function GetAQuotePage() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
       setSubmitted(true);
-    } catch { alert("Failed. Please call +44 01252 265363."); }
+    } catch { alert("Failed. Please call +63 912 345 6789."); }
     finally { setLoading(false); }
   };
 

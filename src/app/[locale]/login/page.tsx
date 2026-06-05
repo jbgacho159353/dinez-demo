@@ -228,7 +228,7 @@ export default function LoginPage() {
             <p className="text-gray-500">
               Need help accessing your account?{" "}
               <a
-                href="mailto:bookings@dinez.co.uk"
+                href="mailto:bookings@dinez-executive.com"
                 className="hover:underline transition-colors"
                 style={{ color: G }}
               >

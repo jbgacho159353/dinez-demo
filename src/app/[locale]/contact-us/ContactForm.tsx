@@ -13,7 +13,7 @@ export default function ContactPage() {
       const res = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: form.name, email: form.email, phone: form.phone, message: `Subject: ${form.subject}\n\n${form.message}` }) });
       if (!res.ok) throw new Error();
       setSent(true);
-    } catch { alert("Failed to send. Please call +44 01252 265363."); }
+    } catch { alert("Failed to send. Please call +63 912 345 6789."); }
     finally { setLoading(false); }
   };
   const input = "w-full bg-dark border border-dark-border rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-gold transition-colors";
@@ -26,11 +26,11 @@ export default function ContactPage() {
         {/* Info */}
         <div className="lg:col-span-2 space-y-5">
           {[
-            { icon:"📞", label:"Phone", value:"+44 01252 265363", href:"tel:+4401252265363" },
-            { icon:"💬", label:"WhatsApp", value:"+44 7778 356571", href:"https://wa.me/447778356571" },
-            { icon:"✉️", label:"Email", value:"bookings@dinez.co.uk", href:"mailto:bookings@dinez.co.uk" },
-            { icon:"📍", label:"Address", value:"151 Grosvenor Road, Aldershot GU11 3EF", href:"#map" },
-            { icon:"🪪", label:"Licence", value:"25/00699/TXOPR-1/5", href:undefined },
+            { icon:"📞", label:"Phone", value:"+63 912 345 6789", href:"tel:+639123456789" },
+            { icon:"💬", label:"WhatsApp", value:"+63 966 635 8012", href:"https://wa.me/639666358012" },
+            { icon:"✉️", label:"Email", value:"bookings@dinez-executive.com", href:"mailto:bookings@dinez-executive.com" },
+            { icon:"📍", label:"Address", value:"45 Royal Drive, London EC1A 1BB", href:"#map" },
+            { icon:"🪪", label:"Licence", value:"TFL-2025-DEM-001", href:undefined },
           ].map(c=>(
             <div key={c.label} className="bg-dark-card border border-dark-border rounded-2xl p-5 flex items-start gap-4 hover:border-gold/30 transition-all">
               <span className="text-2xl mt-0.5">{c.icon}</span>
@@ -76,7 +76,7 @@ export default function ContactPage() {
       </div>
       {/* Map */}
       <div id="map" className="mt-10 rounded-2xl overflow-hidden border border-dark-border">
-        <iframe src="https://maps.google.com/maps?q=151+Grosvenor+Road+Aldershot+GU11+3EF&output=embed" width="100%" height="380" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Dinez Location" />
+        <iframe src="https://maps.google.com/maps?q=45+Royal+Drive+London+EC1A+1BB&output=embed" width="100%" height="380" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Dinez Location" />
       </div>
     </div></section>
     <Footer /><WhatsAppButton /></main>

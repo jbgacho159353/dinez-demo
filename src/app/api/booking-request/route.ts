@@ -126,10 +126,10 @@ function customerHtml(
     </div>
     <div style="background:#1a1500;border:1px solid rgba(201,168,76,0.2);border-radius:8px;padding:16px;text-align:center;margin-bottom:24px;">
       <p style="color:#aaa;font-size:12px;margin:0 0 6px;">Urgent? Contact us directly:</p>
-      <p style="color:#C9A84C;font-size:17px;font-weight:bold;margin:0;">+44 01252 265363</p>
-      <p style="color:#888;font-size:12px;margin:4px 0 0;">WhatsApp: +44 7778 356571</p>
+      <p style="color:#C9A84C;font-size:17px;font-weight:bold;margin:0;">+63 912 345 6789</p>
+      <p style="color:#888;font-size:12px;margin:4px 0 0;">WhatsApp: +63 966 635 8012</p>
     </div>
-    <p style="color:#555;font-size:11px;text-align:center;margin:0;">&copy; 2025 Dinez Executive Taxis &middot; 151 Grosvenor Road, Aldershot GU11 3EF</p>
+    <p style="color:#555;font-size:11px;text-align:center;margin:0;">&copy; 2025 Dinez Executive Taxis &middot; 45 Royal Drive, London EC1A 1BB</p>
   </div>
 </div>`;
 }

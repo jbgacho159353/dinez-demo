@@ -70,18 +70,18 @@ export async function POST(req: NextRequest) {
               </div>
               <p style="margin-top: 20px;">
                 Questions? Call us on
-                <a href="tel:+441252265363" style="color: #C9A435;">
-                  +44 01252 265363
+                <a href="tel:+639123456789" style="color: #C9A435;">
+                  +63 912 345 6789
                 </a>
                 or WhatsApp
-                <a href="https://wa.me/447778356571" style="color: #C9A435;">
-                  +44 7778 356571
+                <a href="https://wa.me/639666358012" style="color: #C9A435;">
+                  +63 966 635 8012
                 </a>
               </p>
             </div>
             <div style="background: #0A0A0A; padding: 20px; text-align: center;">
               <p style="color: #666; font-size: 12px;">
-                © 2025 Dinez Executive Taxis. 151 Grosvenor Road, Aldershot GU11 3EF
+                © 2025 Dinez Executive Taxis. 45 Royal Drive, London EC1A 1BB
               </p>
             </div>
           </div>

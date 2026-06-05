@@ -49,17 +49,17 @@ export async function POST(req: NextRequest) {
     ).join("");
 
     await resend.emails.send({
-      from: "Dinez Quotes <bookings@dinez.co.uk>",
+      from: "Dinez Quotes <bookings@dinez-executive.com>",
       to: process.env.OWNER_EMAIL!,
       subject: `New Quote Request — ${customerName}`,
       html: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:24px;background:#f9f9f9;border-radius:8px;"><h2 style="color:#C9A84C;">New Quote Request</h2><table style="width:100%;border-collapse:collapse;background:#fff;border-radius:8px;">${rows}</table></div>`,
     });
 
     await resend.emails.send({
-      from: "Dinez Executive Taxis <bookings@dinez.co.uk>",
+      from: "Dinez Executive Taxis <bookings@dinez-executive.com>",
       to: customerEmail,
       subject: "Quote Request Received — Dinez Executive Taxis",
-      html: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#0a0a0a;color:#fff;padding:32px;border-radius:8px;"><div style="text-align:center;margin-bottom:32px;"><h1 style="color:#C9A84C;font-size:28px;margin:0;letter-spacing:4px;">DINEZ</h1><p style="color:#888;font-size:11px;letter-spacing:3px;margin:4px 0 0;">EXECUTIVE TAXIS</p></div><h2 style="font-size:20px;">Thank You, ${customerName}</h2><p style="color:#aaa;margin-bottom:24px;">We've received your quote request and will reply within 2 hours with a personalised price.</p><div style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:20px;margin-bottom:24px;"><p style="color:#888;font-size:13px;margin:0 0 4px;">Your journey:</p><p style="color:#fff;font-size:15px;margin:0;">${pickupLocation} → ${dropoffLocation}</p></div><div style="background:#1a1500;border:1px solid #C9A84C33;border-radius:8px;padding:16px;text-align:center;"><p style="color:#aaa;font-size:13px;margin:0 0 4px;">Or call us directly:</p><p style="color:#C9A84C;font-size:16px;font-weight:bold;margin:0;">+44 01252 265363</p></div></div>`,
+      html: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#0a0a0a;color:#fff;padding:32px;border-radius:8px;"><div style="text-align:center;margin-bottom:32px;"><h1 style="color:#C9A84C;font-size:28px;margin:0;letter-spacing:4px;">DINEZ</h1><p style="color:#888;font-size:11px;letter-spacing:3px;margin:4px 0 0;">EXECUTIVE TAXIS</p></div><h2 style="font-size:20px;">Thank You, ${customerName}</h2><p style="color:#aaa;margin-bottom:24px;">We've received your quote request and will reply within 2 hours with a personalised price.</p><div style="background:#1c1c1c;border:1px solid #2a2a2a;border-radius:8px;padding:20px;margin-bottom:24px;"><p style="color:#888;font-size:13px;margin:0 0 4px;">Your journey:</p><p style="color:#fff;font-size:15px;margin:0;">${pickupLocation} → ${dropoffLocation}</p></div><div style="background:#1a1500;border:1px solid #C9A84C33;border-radius:8px;padding:16px;text-align:center;"><p style="color:#aaa;font-size:13px;margin:0 0 4px;">Or call us directly:</p><p style="color:#C9A84C;font-size:16px;font-weight:bold;margin:0;">+63 912 345 6789</p></div></div>`,
     });
 
     return NextResponse.json({ success: true });

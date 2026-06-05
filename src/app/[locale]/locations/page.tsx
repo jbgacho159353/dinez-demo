@@ -34,9 +34,9 @@ export default function LocationsPage() {
       {/* Map */}
       <div className="rounded-2xl overflow-hidden border border-dark-border">
         <div className="bg-dark-surface px-6 py-4 border-b border-dark-border">
-          <h3 className="text-white font-semibold">📍 Our Base — 151 Grosvenor Road, Aldershot GU11 3EF</h3>
+          <h3 className="text-white font-semibold">📍 Our Base — 45 Royal Drive, London EC1A 1BB</h3>
         </div>
-        <iframe src="https://maps.google.com/maps?q=151+Grosvenor+Road+Aldershot+GU11+3EF&output=embed" width="100%" height="400" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Dinez Executive Taxis Location" />
+        <iframe src="https://maps.google.com/maps?q=45+Royal+Drive+London+EC1A+1BB&output=embed" width="100%" height="400" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Dinez Executive Taxis Location" />
       </div>
     </div></section>
     <BookCTA heading="Book From Your Location" />

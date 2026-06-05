@@ -100,7 +100,7 @@ export default function CorporatePage() {
 
       doc.setTextColor(...gold);
       doc.setFontSize(8);
-      doc.text("Dinez Executive Taxis  |  info@dinez.co.uk  |  +44 01252 265363", 105, 287, { align: "center" });
+      doc.text("Dinez Executive Taxis  |  info@dinez-executive.com  |  +63 912 345 6789", 105, 287, { align: "center" });
 
       doc.save(`invoice-${a.company_name.replace(/\s+/g, "-").toLowerCase()}-${Date.now()}.pdf`);
     });
